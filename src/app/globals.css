@@ -2,25 +2,52 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0f1f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
+
+  --color-ink: #0a0f1f;
+  --color-ink-muted: #57607a;
+
+  --color-brand-50: #eaf6ff;
+  --color-brand-100: #cdebff;
+  --color-brand-200: #98d6fb;
+  --color-brand-300: #5cbdf5;
+  --color-brand-400: #26a3ea;
+  --color-brand-500: #0f8fd9;
+  --color-brand-600: #0c73b0;
+  --color-brand-700: #0d5a8c;
+  --color-brand-800: #123f66;
+  --color-brand-900: #0a1a3f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(15, 143, 217, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 143, 217, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
 }
