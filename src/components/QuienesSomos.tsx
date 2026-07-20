@@ -1,5 +1,5 @@
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
-import { features } from "@/lib/data";
+import { features, programFeatures } from "@/lib/data";
 
 export function QuienesSomos() {
   return (
@@ -10,13 +10,15 @@ export function QuienesSomos() {
             Quiénes somos
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
-            Más no siempre es mejor.{" "}
-            <span className="text-brand-500">El secreto está en la estructura.</span>
+            Conoce el examen.{" "}
+            <span className="text-brand-500">Domina su estructura.</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-muted">
-            No necesitas mil recursos. Necesitas un plan de acción claro: saber
-            qué hacer, cuándo y cómo — acompañado de gente que ya recorrió este
-            camino antes que tú.
+            USMLE HY TUTOR® es un programa que complementa los estudios
+            individualizados que cada alumno debe llevar al momento de
+            prepararse para los Steps. Cubrimos contenido de Step 1 y Step 2
+            CK, fortaleciendo el pensamiento crítico y la resolución de
+            problemas con enfoque en temas de alto rendimiento.
           </p>
         </Reveal>
 
@@ -40,14 +42,34 @@ export function QuienesSomos() {
 
         <Reveal delay={0.1} className="mt-16 rounded-3xl bg-brand-900 px-8 py-12 sm:px-14">
           <p className="font-display max-w-2xl text-2xl font-bold leading-snug text-white sm:text-3xl">
-            Acompañándote en cada paso desde 2018.
-          </p>
-          <p className="mt-4 max-w-xl text-brand-100">
-            Sabemos lo difícil que es el camino. Hay buenos días y malos días.
-            No podemos quitar esa presión por completo — pero sí podemos hacer
-            el proceso más corto, más claro y un poco menos pesado.
+            USMLE HY TUTOR® es un programa académico para lograr el objetivo
+            final: hacer match en una residencia hospitalaria en Estados
+            Unidos.
           </p>
         </Reveal>
+
+        <div className="mt-16">
+          <Reveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+              Cómo trabajamos
+            </p>
+          </Reveal>
+
+          <RevealGroup className="mt-8 grid gap-3 sm:grid-cols-2">
+            {programFeatures.map((item) => (
+              <RevealItem key={item}>
+                <div className="flex items-center gap-3 rounded-2xl border border-ink/8 bg-white px-5 py-4">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                      <path d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-sm font-medium text-ink">{item}</p>
+                </div>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
       </div>
     </section>
   );
