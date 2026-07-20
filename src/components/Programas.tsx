@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
-import { ProgramIcon } from "./ProgramIcon";
 import { programas } from "@/lib/data";
 
 export function Programas() {
@@ -33,12 +33,13 @@ export function Programas() {
                     Premium
                   </span>
                 )}
-                <span
-                  className="flex h-11 w-11 items-center justify-center rounded-xl text-white transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundColor: p.color }}
-                >
-                  <ProgramIcon icon={p.icon} className="h-5 w-5" />
-                </span>
+                <Image
+                  src={p.badge}
+                  alt=""
+                  width={112}
+                  height={112}
+                  className="h-14 w-14 rounded-full transition-transform duration-300 group-hover:scale-110"
+                />
                 <h3 className="font-display mt-5 text-lg font-bold leading-snug text-ink">
                   {p.title}
                 </h3>

@@ -25,20 +25,10 @@ export const features = [
   },
 ];
 
-export type ProgramIcon =
-  | "group"
-  | "checklist"
-  | "diamond"
-  | "run"
-  | "bolt"
-  | "lock"
-  | "meteor";
-
-export const programas = [
+const programasBase = [
   {
     slug: "clases-grupales-step1-ck-step3",
     number: "01",
-    icon: "group" as ProgramIcon,
     color: "#1F9D55",
     title: "Clases Grupales Step 1, Step 2 CK & Step 3",
     tagline: "Clases grupales en vivo con contenido de alto rendimiento para los tres exámenes.",
@@ -75,7 +65,6 @@ export const programas = [
   {
     slug: "clases-grupales-step2-ck",
     number: "02",
-    icon: "group" as ProgramIcon,
     color: "#8A5A2E",
     title: "Clases Grupales Step 2 CK",
     tagline: "Clases grupales en vivo enfocadas exclusivamente en Step 2 CK.",
@@ -110,7 +99,6 @@ export const programas = [
   {
     slug: "test-taking-strategies-step1",
     number: "03",
-    icon: "checklist" as ProgramIcon,
     color: "#E11D74",
     title: "Test Taking Strategies Step 1",
     tagline: "Estrategias de examen para resolver preguntas de Step 1 con más velocidad y precisión.",
@@ -146,7 +134,6 @@ export const programas = [
   {
     slug: "tts-step2-ck-sapphire",
     number: "04",
-    icon: "diamond" as ProgramIcon,
     color: "#7C3AED",
     title: "TTS Step 2 CK Sapphire",
     tagline: "Estrategia de examen de nivel avanzado para Step 2 CK.",
@@ -183,71 +170,64 @@ export const programas = [
   {
     slug: "stamina-drills",
     number: "05",
-    icon: "run" as ProgramIcon,
     color: "#F0A020",
     title: "Stamina Drills",
-    tagline: "Simulacros de resistencia para aguantar el examen completo sin perder el enfoque.",
+    tagline: "Cursos intensivos, una vez al mes, con temas específicos y mínimo 5 horas seguidas.",
     description:
-      "El contenido no sirve de nada si te agotas a la mitad del examen. Stamina Drills construye tu resistencia mental bloque a bloque.",
+      "Los Staminas son cursos intensivos que ofrecemos una vez al mes. Los temas son específicos y tenemos un mínimo de 5 horas seguidas. La stamina o resistencia es principalmente la capacidad actual para lograr un rendimiento de buena calidad — en nuestros intensivos te preparamos indirectamente para el día del examen, donde la resistencia y el enfoque son parte clave.",
     details: [
-      { label: "Duración", value: "Sesiones semanales" },
-      { label: "Formato", value: "Bloques de práctica cronometrados" },
-      { label: "Para quién", value: "Quienes necesitan construir resistencia para el día del examen" },
+      { label: "Duración", value: "Una vez al mes · mínimo 5 horas seguidas" },
+      { label: "Formato", value: "Curso intensivo, tema específico" },
+      { label: "Para quién", value: "Quienes necesitan construir resistencia y enfoque para el examen" },
     ],
     steps: [
       {
-        title: "Línea base de resistencia",
-        description: "Medimos cuánto aguantas hoy con enfoque real, sin distracciones.",
+        title: "Tema específico del mes",
+        description: "Cada intensivo se enfoca en un tema puntual, sin dispersión.",
       },
       {
-        title: "Bloques progresivos",
+        title: "Mínimo 5 horas seguidas",
         description:
-          "Aumentamos la duración de los simulacros semana a semana, de forma controlada.",
+          "Practicas en bloques largos y continuos para entrenar tu resistencia real, no simulada.",
       },
       {
-        title: "Manejo de fatiga mental",
+        title: "Rendimiento sostenido",
         description:
-          "Técnicas concretas para mantener el enfoque en los últimos bloques del examen.",
+          "Trabajamos tu capacidad de mantener un rendimiento de buena calidad durante todo el bloque.",
       },
       {
-        title: "Simulacro de día completo",
-        description: "Un simulacro final que replica la duración total del examen real.",
+        title: "Preparación indirecta para el examen",
+        description: "La resistencia y el enfoque que construyes aquí se trasladan directo al día del examen.",
       },
     ],
   },
   {
     slug: "snap-drills",
     number: "06",
-    icon: "bolt" as ProgramIcon,
     color: "#F0651C",
     title: "Snap Drills",
     tagline: "Rondas rápidas de preguntas para afilar tu reconocimiento de patrones.",
     description:
-      "Sesiones cortas y frecuentes de práctica rápida, diseñadas para mantenerte afilada o afilado entre bloques de estudio más largos.",
+      "Sesiones cortas y frecuentes de práctica rápida, diseñadas para mantenerte afilada o afilado entre bloques de estudio más largos. Te garantizamos resultados concretos en tu forma de responder.",
     details: [
       { label: "Duración", value: "Sesiones cortas y frecuentes" },
       { label: "Formato", value: "Drills rápidos en vivo" },
       { label: "Para quién", value: "Quienes quieren mantenerse activos entre bloques de estudio" },
     ],
-    steps: [
-      {
-        title: "Ronda rápida de calentamiento",
-        description: "Unas preguntas para activar el reconocimiento de patrones antes de empezar.",
-      },
-      {
-        title: "Drills cronometrados",
-        description: "Bloques cortos de alta intensidad enfocados en velocidad de respuesta.",
-      },
-      {
-        title: "Revisión inmediata",
-        description: "Corregimos en el momento para que el aprendizaje se quede fresco.",
-      },
+    steps: [],
+    benefits: [
+      "Reconocer passwords en las preguntas",
+      "Aumento de confianza",
+      "Ahorro de tiempo en las preguntas",
+      "Rápido procesamiento",
+      "Superación personal",
+      "Entrenamiento del cerebro",
+      "Habilidades técnicas",
     ],
   },
   {
     slug: "drills-privados",
     number: "07",
-    icon: "lock" as ProgramIcon,
     color: "#DC2626",
     title: "Drills Privados",
     tagline: "Sesiones de práctica 1:1, totalmente personalizadas a tus brechas.",
@@ -276,37 +256,35 @@ export const programas = [
   {
     slug: "meteorito",
     number: "08",
-    icon: "meteor" as ProgramIcon,
     color: "#0E9AA7",
     title: "Meteorito",
-    tagline: "Sprint final de alto impacto para los días previos a tu examen.",
+    tagline: "Membresía mensual de acompañamiento continuo para quienes ya están en un programa.",
     description:
-      "Cuando quedan pocas semanas, cada hora cuenta. Meteorito es un sprint de alta frecuencia enfocado solo en lo que va a mover tu resultado.",
+      "¡Conviértete en la fuerza que transforma el aprendizaje! Meteorito es nuestra membresía mensual de acompañamiento continuo: seguimiento cercano, apoyo con ECFMG y papeleo, guía de material de estudio y sesiones grupales para evaluar tu avance.",
     details: [
-      { label: "Duración", value: "Sprint corto e intensivo" },
-      { label: "Formato", value: "Sesiones en vivo de alta frecuencia" },
-      { label: "Para quién", value: "Quienes están a semanas de su examen" },
+      { label: "Inversión", value: "$80 USD / mes" },
+      { label: "Formato", value: "Membresía mensual de acompañamiento" },
+      { label: "Para quién", value: "Quienes ya están inscritos en uno de nuestros programas" },
     ],
-    steps: [
-      {
-        title: "Detección de brechas críticas",
-        description: "Priorizamos exactamente lo que más va a impactar tu score en el tiempo que queda.",
-      },
-      {
-        title: "Plan de choque diario",
-        description: "Un cronograma día a día, sin espacio para temas que no suman.",
-      },
-      {
-        title: "Check-ins de alta frecuencia",
-        description: "Seguimiento constante para ajustar el plan en tiempo real.",
-      },
-      {
-        title: "Simulacro final",
-        description: "Última prueba de confianza antes del día del examen.",
-      },
+    steps: [],
+    benefits: [
+      "Follow up",
+      "Clases extras",
+      "Apoyo con ECFMG",
+      "Resolución de dudas",
+      "Acceso a chat privado",
+      "Asesoría y gestión de papeleo",
+      "Guía de uso del material de estudio",
+      "Sesiones grupales para evaluar avances",
+      "Explicación detallada de herramientas de estudio",
     ],
   },
 ];
+
+export const programas = programasBase.map((p) => ({
+  ...p,
+  badge: `/brand/badges/${p.slug}.jpg`,
+}));
 
 export const nav = [
   { label: "Quiénes Somos", href: "/quienes-somos" },

@@ -1,5 +1,5 @@
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
-import { resenas } from "@/lib/data";
+import type { ResenaItem } from "@/lib/resenasStore";
 
 function Stars({ count }: { count: number }) {
   return (
@@ -13,7 +13,7 @@ function Stars({ count }: { count: number }) {
   );
 }
 
-export function Resenas() {
+export function Resenas({ reviews }: { reviews: ResenaItem[] }) {
   return (
     <section className="relative pt-40 pb-28">
       <div className="mx-auto max-w-6xl px-6">
@@ -31,8 +31,8 @@ export function Resenas() {
         </Reveal>
 
         <RevealGroup className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {resenas.map((r) => (
-            <RevealItem key={r.name}>
+          {reviews.map((r, i) => (
+            <RevealItem key={`${r.name}-${i}`}>
               <div className="group flex h-full flex-col rounded-3xl border border-ink/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5">
                 <Stars count={r.rating} />
                 <p className="mt-5 flex-1 text-sm leading-relaxed text-ink-muted">
@@ -44,7 +44,7 @@ export function Resenas() {
                   </div>
                   <div>
                     <p className="font-display text-sm font-bold text-ink">{r.name}</p>
-                    <p className="text-xs text-ink-muted">{r.role}</p>
+                    {r.role && <p className="text-xs text-ink-muted">{r.role}</p>}
                   </div>
                 </div>
               </div>
