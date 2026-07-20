@@ -7,22 +7,29 @@ export const stats = [
 export const features = [
   {
     number: "01",
-    title: "Solo lo que sí importa",
+    title: "La estructura del examen, como objetivo principal",
     description:
-      "Eliminamos el ruido. Te enfocas únicamente en lo que de verdad mueve la aguja, sin perder semanas en temas que no suman.",
+      "Si conoces el examen y dominas su estructura, puedes integrar los contenidos para poder pasarlo. Ese es el enfoque detrás de cada clase.",
   },
   {
     number: "02",
-    title: "A tu ritmo, con estructura",
+    title: "Estudio interdisciplinario",
     description:
-      "Avanzas cuando puedes, pero con un plan claro que te dice qué sigue. Libertad sin perderte en el camino.",
+      "Integramos los temas entre disciplinas en lugar de enseñar por materia — así aprendes a usar eliminación y las pistas del enunciado para resolver preguntas más rápido.",
   },
   {
     number: "03",
-    title: "Comunidad real",
+    title: "En inglés, explicado en Spanglish",
     description:
-      "Acompañamiento cercano entre personas que están viviendo lo mismo que tú, con mentores que ya recorrieron el camino.",
+      "El material se revisa en inglés — el idioma real del examen — pero las explicaciones son en Spanglish, para que nada se pierda en el camino.",
   },
+];
+
+export const programFeatures = [
+  "Clases grupales y privadas disponibles",
+  "Drills, cursos intensivos y entrenamiento de stamina",
+  "Inscripción flexible, sin fecha de inicio o fin fija",
+  "Diseñado para complementar tu estudio individual, no para reemplazarlo",
 ];
 
 const programasBase = [
