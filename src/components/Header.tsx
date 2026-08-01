@@ -42,7 +42,7 @@ export function Header() {
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         scrolled
           ? "bg-white/80 backdrop-blur-lg shadow-[0_1px_0_0_rgba(15,34,98,0.08)]"
-          : "bg-transparent"
+          : "bg-brand-900/30 backdrop-blur-sm"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -63,7 +63,9 @@ export function Header() {
               <div key={item.label} ref={dropdownRef} className="relative">
                 <button
                   onClick={() => setDropdownOpen((v) => !v)}
-                  className="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-brand-600"
+                  className={`flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                    scrolled ? "text-ink-muted hover:text-brand-600" : "text-white/90 hover:text-white"
+                  }`}
                   aria-expanded={dropdownOpen}
                 >
                   {item.label}
@@ -131,7 +133,9 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-brand-600"
+                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  scrolled ? "text-ink-muted hover:text-brand-600" : "text-white/90 hover:text-white"
+                }`}
               >
                 {item.label}
               </Link>
@@ -150,21 +154,21 @@ export function Header() {
 
         <button
           onClick={() => setMobileOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-ink md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full md:hidden"
           aria-label="Abrir menú"
         >
           <motion.div animate={mobileOpen ? "open" : "closed"} className="flex flex-col gap-1.5">
             <motion.span
               variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: 45, y: 6 } }}
-              className="block h-0.5 w-6 bg-ink"
+              className={`block h-0.5 w-6 ${scrolled ? "bg-ink" : "bg-white"}`}
             />
             <motion.span
               variants={{ closed: { opacity: 1 }, open: { opacity: 0 } }}
-              className="block h-0.5 w-6 bg-ink"
+              className={`block h-0.5 w-6 ${scrolled ? "bg-ink" : "bg-white"}`}
             />
             <motion.span
               variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: -45, y: -6 } }}
-              className="block h-0.5 w-6 bg-ink"
+              className={`block h-0.5 w-6 ${scrolled ? "bg-ink" : "bg-white"}`}
             />
           </motion.div>
         </button>

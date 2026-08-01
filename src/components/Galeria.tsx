@@ -26,13 +26,13 @@ export function Galeria() {
     <section className="relative pt-40 pb-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
             Galería
           </p>
-          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Momentos de la comunidad.
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-ink-muted">
+          <p className="mt-6 text-lg leading-relaxed text-brand-100">
             Clases en vivo, simulacros y celebraciones de quienes ya lo lograron.
           </p>
         </Reveal>

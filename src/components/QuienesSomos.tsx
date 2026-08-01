@@ -6,14 +6,14 @@ export function QuienesSomos() {
     <section className="relative pt-40 pb-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
             Quiénes somos
           </p>
-          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Conoce el examen.{" "}
-            <span className="text-brand-500">Domina su estructura.</span>
+            <span className="text-brand-300">Domina su estructura.</span>
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-ink-muted">
+          <p className="mt-6 text-lg leading-relaxed text-brand-100">
             USMLE HY TUTOR® es un programa que complementa los estudios
             individualizados que cada alumno debe llevar al momento de
             prepararse para los Steps. Cubrimos contenido de Step 1 y Step 2
@@ -40,7 +40,7 @@ export function QuienesSomos() {
           ))}
         </RevealGroup>
 
-        <Reveal delay={0.1} className="mt-16 rounded-3xl bg-brand-900 px-8 py-12 sm:px-14">
+        <Reveal delay={0.1} className="mt-16 rounded-3xl bg-brand-800 px-8 py-12 sm:px-14">
           <p className="font-display max-w-2xl text-2xl font-bold leading-snug text-white sm:text-3xl">
             USMLE HY TUTOR® es un programa académico para lograr el objetivo
             final: hacer match en una residencia hospitalaria en Estados
@@ -50,7 +50,7 @@ export function QuienesSomos() {
 
         <div className="mt-16">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
               Cómo trabajamos
             </p>
           </Reveal>

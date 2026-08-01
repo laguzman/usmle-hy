@@ -38,35 +38,23 @@ const programasBase = [
     number: "01",
     color: "#1F9D55",
     title: "Clases Grupales Step 1, Step 2 CK & Step 3",
-    tagline: "Clases grupales en vivo con contenido de alto rendimiento para los tres exámenes.",
+    tagline: "Clases en vivo 5 días a la semana, con acceso a USMLE Rx, Pathoma y una comunidad internacional.",
     description:
-      "Clases grupales en vivo que cubren Step 1, Step 2 CK y Step 3 con material de alto rendimiento (high-yield), pensadas para avanzar junto a otras personas en tu misma etapa.",
+      "Clases en vivo cinco días a la semana en horario de Miami (Eastern Time). El horario oficial se envía todos los domingos para que puedas organizar tu semana con anticipación — por lo general las sesiones son de 7 a 9 PM. Todas quedan grabadas y disponibles en el drive exclusivo aproximadamente 24 horas después.",
     details: [
-      { label: "Duración", value: "Programa continuo, por cohortes" },
-      { label: "Formato", value: "Clases en vivo + grabaciones" },
-      { label: "Para quién", value: "Quienes preparan Step 1, Step 2 CK o Step 3" },
+      { label: "Horario", value: "5 días a la semana · 7–9 PM (ET)" },
+      { label: "Formato", value: "Clases en vivo + grabaciones a las 24h" },
+      { label: "Para quién", value: "Step 1, Step 2 CK y Step 3, en un solo grupo" },
     ],
-    steps: [
-      {
-        title: "Ubicación en tu grupo",
-        description:
-          "Te ubicamos en la cohorte correcta según el examen que estás preparando.",
-      },
-      {
-        title: "Clases en vivo semana a semana",
-        description:
-          "Sesiones grupales con contenido high-yield, directo a lo que realmente se pregunta.",
-      },
-      {
-        title: "Material y grabaciones",
-        description:
-          "Acceso a las grabaciones y material de apoyo para repasar a tu ritmo.",
-      },
-      {
-        title: "Práctica y refuerzo continuo",
-        description:
-          "Ejercicios y checkpoints para confirmar que el contenido quedó claro antes de avanzar.",
-      },
+    benefits: [
+      "Clases en vivo",
+      "5 días a la semana",
+      "Habilidades de asociación y descarte",
+      "Acceso a videos de USMLE Rx y Pathoma",
+      "Material de apoyo exclusivo para alumnos",
+      "Grabaciones disponibles en caso de no asistir",
+      "Networking con una comunidad internacional",
+      "Chat interactivo para resolver dudas en grupo",
     ],
   },
   {
@@ -74,33 +62,22 @@ const programasBase = [
     number: "02",
     color: "#8A5A2E",
     title: "Clases Grupales Step 2 CK",
-    tagline: "Clases grupales en vivo enfocadas exclusivamente en Step 2 CK.",
+    tagline: "Clases en vivo 3 días a la semana, con enfoque exclusivo en Step 2 CK.",
     description:
-      "Un espacio grupal dedicado por completo a Step 2 CK: razonamiento clínico aplicado, con el mismo enfoque de alto rendimiento.",
+      "Programa diseñado exclusivamente para la preparación clínica de Step 2 CK. Las clases se dictan tres días por semana, por lo general de 5 a 7 PM (Eastern Time), con acceso adicional a las clases del grupo general para complementar tu preparación con un enfoque interdisciplinario.",
     details: [
-      { label: "Duración", value: "Programa continuo, por cohortes" },
-      { label: "Formato", value: "Clases en vivo + grabaciones" },
-      { label: "Para quién", value: "Quienes preparan específicamente Step 2 CK" },
+      { label: "Horario", value: "3 días a la semana · 5–7 PM (ET)" },
+      { label: "Formato", value: "Clases en vivo + grabaciones a las 24h" },
+      { label: "Para quién", value: "Preparación clínica enfocada en Step 2 CK" },
     ],
-    steps: [
-      {
-        title: "Diagnóstico de tu nivel",
-        description: "Partimos de dónde estás para enfocar las clases en lo que más te falta.",
-      },
-      {
-        title: "Clases en vivo por sistemas",
-        description:
-          "Cubrimos cada sistema con casos clínicos que reflejan cómo se pregunta en el examen real.",
-      },
-      {
-        title: "Resolución de dudas en grupo",
-        description:
-          "Espacio semanal para preguntar y ver cómo otros compañeros razonan los mismos casos.",
-      },
-      {
-        title: "Simulacro de cierre",
-        description: "Evaluación final para medir tu progreso antes del examen.",
-      },
+    benefits: [
+      "Clases en vivo 3 días a la semana",
+      "Enfoque exclusivo en Step 2 CK",
+      "Discusión de casos clínicos y preguntas high-yield",
+      "Grabaciones disponibles para revisar las clases",
+      "Chat interactivo para resolver dudas y compartir en comunidad",
+      "Acompañamiento durante todo el proceso de preparación",
+      "Acceso al grupo general del programa",
     ],
   },
   {
@@ -108,34 +85,24 @@ const programasBase = [
     number: "03",
     color: "#E11D74",
     title: "Test Taking Strategies Step 1",
-    tagline: "Estrategias de examen para resolver preguntas de Step 1 con más velocidad y precisión.",
+    tagline: "Grupo privado y exclusivo para Step 1, con cupo limitado a 25 personas.",
     description:
-      "No se trata solo de saber el contenido — se trata de saber responder. Un programa enfocado en técnica de examen para Step 1.",
+      "Entrenamiento intensivo en técnicas de test-taking: aprendes a leer con precisión, identificar pistas, descartar opciones incorrectas y responder de forma rápida y efectiva. Al ser un grupo reducido, cada participante recibe atención prioritaria y un seguimiento más cercano. Las sesiones son en vivo y no quedan grabadas.",
     details: [
-      { label: "Duración", value: "Curso corto, sesiones en vivo" },
-      { label: "Formato", value: "Sesiones en vivo + práctica dirigida" },
-      { label: "Para quién", value: "Quienes ya dominan el contenido y buscan afinar estrategia" },
+      { label: "Horario", value: "Sábados 11 AM (ET) · 12 horas al mes" },
+      { label: "Formato", value: "Grupo privado, en vivo (sin grabación)" },
+      { label: "Para quién", value: "Grupo cerrado, cupo limitado a 25 personas" },
     ],
-    steps: [
-      {
-        title: "Análisis de tu forma de responder",
-        description:
-          "Revisamos tus patrones de error para identificar dónde estás perdiendo puntos.",
-      },
-      {
-        title: "Técnicas de eliminación y manejo del tiempo",
-        description:
-          "Aprendes a descartar distractores y administrar el tiempo por bloque.",
-      },
-      {
-        title: "Práctica dirigida con retroalimentación",
-        description:
-          "Resuelves preguntas en vivo con corrección inmediata sobre tu razonamiento.",
-      },
-      {
-        title: "Simulacro cronometrado",
-        description: "Pones en práctica la estrategia completa bajo condiciones reales.",
-      },
+    benefits: [
+      "Grupo privado y exclusivo para Step 1",
+      "12 horas privadas al mes",
+      "Horas extra/bonus de práctica intensiva",
+      "Entrenamiento intensivo en test taking strategies",
+      "Identificación de pistas y palabras clave",
+      "Descarte estratégico de opciones incorrectas",
+      "Manejo del tiempo y concentración bajo presión",
+      "Desarrollo de habilidades para enfrentar NBME y Step 1",
+      "Acceso a clases grupales",
     ],
   },
   {
@@ -143,35 +110,25 @@ const programasBase = [
     number: "04",
     color: "#7C3AED",
     title: "TTS Step 2 CK Sapphire",
-    tagline: "Estrategia de examen de nivel avanzado para Step 2 CK.",
+    tagline: "Grupo privado y exclusivo para Step 2 CK, con cupo limitado a 25 personas.",
     description:
-      "Nuestro programa premium de estrategia para Step 2 CK, pensado para quienes buscan un score alto y una preparación más cercana.",
+      "Test Taking Strategies Step 2 CK — Sapphire Group. Un grupo privado y exclusivo enfocado en preguntas y casos high-yield, con acompañamiento cercano para desarrollar razonamiento clínico y pattern recognition. Las clases se realizan por lo general los domingos o lunes en la tarde, en vivo y sin grabación.",
     highlight: true,
     details: [
-      { label: "Duración", value: "Programa premium" },
-      { label: "Formato", value: "Sesiones en vivo 1:1 y grupales" },
-      { label: "Para quién", value: "Quienes buscan un score alto en Step 2 CK" },
+      { label: "Horario", value: "Domingo o lunes en la tarde · 12h/mes" },
+      { label: "Formato", value: "Grupo privado, en vivo (sin grabación)" },
+      { label: "Para quién", value: "Grupo cerrado, cupo limitado a 25 personas" },
     ],
-    steps: [
-      {
-        title: "Diagnóstico avanzado",
-        description:
-          "Evaluamos a fondo tu razonamiento clínico y tus patrones de examen actuales.",
-      },
-      {
-        title: "Estrategia personalizada",
-        description:
-          "Diseñamos un plan de técnica de examen a tu medida, no genérico.",
-      },
-      {
-        title: "Sesiones 1:1 y grupales",
-        description:
-          "Combinamos acompañamiento cercano con la energía de practicar en grupo.",
-      },
-      {
-        title: "Simulacros de alto nivel",
-        description: "Práctica bajo presión real para llegar segura o seguro al examen.",
-      },
+    benefits: [
+      "Grupo privado y exclusivo para Step 2 CK",
+      "Preguntas y casos high-yield",
+      "Horas extra/bonus de práctica intensiva",
+      "Chat interactivo 24/7 para resolver dudas",
+      "12 horas privadas al mes",
+      "Razonamiento clínico y pattern recognition",
+      "Corrección directa y retroalimentación personalizada",
+      "Desarrollo de habilidades para enfrentar Step 2 CK",
+      "Acceso a clases grupales de Step 2 CK y grupo general",
     ],
   },
   {
@@ -179,33 +136,23 @@ const programasBase = [
     number: "05",
     color: "#F0A020",
     title: "Stamina Drills",
-    tagline: "Cursos intensivos, una vez al mes, con temas específicos y mínimo 5 horas seguidas.",
+    tagline: "Sesiones grupales de alta intensidad — 8 a 10 horas continuas de entrenamiento.",
     description:
-      "Los Staminas son cursos intensivos que ofrecemos una vez al mes. Los temas son específicos y tenemos un mínimo de 5 horas seguidas. La stamina o resistencia es principalmente la capacidad actual para lograr un rendimiento de buena calidad — en nuestros intensivos te preparamos indirectamente para el día del examen, donde la resistencia y el enfoque son parte clave.",
+      "Sesiones grupales intensivas creadas para simular la exigencia del USMLE en un entorno de alto rendimiento. Durante 8 a 10 horas continuas, los participantes enfrentan preguntas y temas high-yield, con breaks estratégicos de 5 a 10 minutos para recuperar energía sin perder el ritmo ni la concentración.",
     details: [
-      { label: "Duración", value: "Una vez al mes · mínimo 5 horas seguidas" },
-      { label: "Formato", value: "Curso intensivo, tema específico" },
-      { label: "Para quién", value: "Quienes necesitan construir resistencia y enfoque para el examen" },
+      { label: "Frecuencia", value: "Una vez al mes o cada dos meses" },
+      { label: "Formato", value: "8–10 horas continuas, con breaks estratégicos" },
+      { label: "Para quién", value: "Step 1, Step 2 CK y Step 3 · cupos limitados" },
     ],
-    steps: [
-      {
-        title: "Tema específico del mes",
-        description: "Cada intensivo se enfoca en un tema puntual, sin dispersión.",
-      },
-      {
-        title: "Mínimo 5 horas seguidas",
-        description:
-          "Practicas en bloques largos y continuos para entrenar tu resistencia real, no simulada.",
-      },
-      {
-        title: "Rendimiento sostenido",
-        description:
-          "Trabajamos tu capacidad de mantener un rendimiento de buena calidad durante todo el bloque.",
-      },
-      {
-        title: "Preparación indirecta para el examen",
-        description: "La resistencia y el enfoque que construyes aquí se trasladan directo al día del examen.",
-      },
+    benefits: [
+      "Sesiones grupales de alta intensidad",
+      "Step 1, Step 2 CK y Step 3",
+      "8 a 10 horas continuas de entrenamiento",
+      "Simulación del examen real",
+      "Breaks estratégicos para mantener el rendimiento",
+      "Desarrollo de resistencia mental (stamina)",
+      "Manejo del tiempo y concentración",
+      "Una vez al mes o cada dos meses",
     ],
   },
   {
@@ -213,23 +160,22 @@ const programasBase = [
     number: "06",
     color: "#F0651C",
     title: "Snap Drills",
-    tagline: "Rondas rápidas de preguntas para afilar tu reconocimiento de patrones.",
+    tagline: "Sesiones grupales de drills high-yield — 10 horas mensuales de entrenamiento.",
     description:
-      "Sesiones cortas y frecuentes de práctica rápida, diseñadas para mantenerte afilada o afilado entre bloques de estudio más largos. Te garantizamos resultados concretos en tu forma de responder.",
+      "Sesiones grupales de entrenamiento high-yield diseñadas para reforzar los conceptos más importantes y de mayor impacto en el USMLE, con enfoque en active recall y pattern recognition. Grupos reducidos de máximo 50 estudiantes para un ambiente dinámico y participativo.",
     details: [
-      { label: "Duración", value: "Sesiones cortas y frecuentes" },
-      { label: "Formato", value: "Drills rápidos en vivo" },
-      { label: "Para quién", value: "Quienes quieren mantenerse activos entre bloques de estudio" },
+      { label: "Horario", value: "Miércoles 7:00 PM (ET) · 10h/mes" },
+      { label: "Formato", value: "3 sesiones en vivo al mes" },
+      { label: "Para quién", value: "Step 1, Step 2 CK y Step 3 · grupos de máximo 50" },
     ],
-    steps: [],
     benefits: [
-      "Reconocer passwords en las preguntas",
-      "Aumento de confianza",
-      "Ahorro de tiempo en las preguntas",
-      "Rápido procesamiento",
-      "Superación personal",
-      "Entrenamiento del cerebro",
-      "Habilidades técnicas",
+      "Sesiones grupales de drills high-yield",
+      "Aplicable para Step 1, Step 2 CK y Step 3",
+      "Enfoque en los temas más importantes del USMLE",
+      "10 horas mensuales de entrenamiento",
+      "Grupos reducidos de máximo 50 estudiantes",
+      "Entrenamiento basado en active recall y pattern recognition",
+      "Desarrollo de velocidad, precisión y manejo del tiempo",
     ],
   },
   {
@@ -237,27 +183,21 @@ const programasBase = [
     number: "07",
     color: "#DC2626",
     title: "Drills Privados",
-    tagline: "Sesiones de práctica 1:1, totalmente personalizadas a tus brechas.",
+    tagline: "Entrenamiento personalizado con Kevin, individual o en grupos de hasta 3 personas.",
     description:
-      "Atención completamente individual. Trabajamos exclusivamente sobre tus brechas específicas, a tu ritmo y en tu horario.",
+      "Sesiones de entrenamiento personalizado con Kevin, de manera individual o en grupos de hasta 3 personas. No son clases tradicionales, sino espacios de práctica intensiva dirigidos a alumnos en una etapa avanzada de preparación, ideales como complemento en la recta final antes del examen.",
     details: [
-      { label: "Duración", value: "A tu medida" },
-      { label: "Formato", value: "Sesiones privadas 1:1" },
-      { label: "Para quién", value: "Quienes necesitan atención completamente personalizada" },
+      { label: "Formato", value: "Individual o en grupos de hasta 3 personas" },
+      { label: "Enfoque", value: "Retroalimentación inmediata con Kevin" },
+      { label: "Para quién", value: "Alumnos en etapa avanzada de preparación" },
     ],
-    steps: [
-      {
-        title: "Diagnóstico individual",
-        description: "Identificamos con precisión tus brechas específicas de contenido y técnica.",
-      },
-      {
-        title: "Plan de sesiones a tu medida",
-        description: "Diseñamos las sesiones alrededor de lo que tú necesitas, no de un temario fijo.",
-      },
-      {
-        title: "Práctica guiada 1:1",
-        description: "Trabajamos caso por caso, con retroalimentación inmediata y personal.",
-      },
+    benefits: [
+      "Sesiones individuales o en grupos de hasta 3 personas",
+      "Trabajo directo con preguntas high-yield",
+      "Retroalimentación inmediata sobre tu razonamiento y estrategia",
+      "Identificación de errores y fortalecimiento del método de descarte",
+      "Mejora en el manejo del tiempo",
+      "Ideal como complemento en la recta final de tu preparación",
     ],
   },
   {
@@ -265,25 +205,25 @@ const programasBase = [
     number: "08",
     color: "#0E9AA7",
     title: "Meteorito",
-    tagline: "Membresía mensual de acompañamiento continuo para quienes ya están en un programa.",
+    tagline: "Membresía mensual de acompañamiento continuo — requiere estar inscrito en un programa.",
     description:
-      "¡Conviértete en la fuerza que transforma el aprendizaje! Meteorito es nuestra membresía mensual de acompañamiento continuo: seguimiento cercano, apoyo con ECFMG y papeleo, guía de material de estudio y sesiones grupales para evaluar tu avance.",
+      "En Meteorito no solo te ayudamos a estudiar: te acompañamos durante todo el proceso con una estrategia clara, mayor organización y un seguimiento constante, para que aproveches mejor tu tiempo de preparación.",
     details: [
-      { label: "Inversión", value: "$80 USD / mes" },
-      { label: "Formato", value: "Membresía mensual de acompañamiento" },
-      { label: "Para quién", value: "Quienes ya están inscritos en uno de nuestros programas" },
+      { label: "Formato", value: "Follow-ups + clases estratégicas + chat privado" },
+      { label: "Inicio", value: "Primeros días de cada mes" },
+      { label: "Para quién", value: "Requiere estar inscrito en el programa" },
     ],
-    steps: [],
     benefits: [
-      "Follow up",
-      "Clases extras",
-      "Apoyo con ECFMG",
-      "Resolución de dudas",
-      "Acceso a chat privado",
-      "Asesoría y gestión de papeleo",
-      "Guía de uso del material de estudio",
-      "Sesiones grupales para evaluar avances",
-      "Explicación detallada de herramientas de estudio",
+      "Follow-up inicial personalizado",
+      "Seguimiento escrito semanal",
+      "Follow-up final y evaluación de progreso",
+      "Clases estratégicas de refuerzo",
+      "Análisis de NBME y bancos de preguntas",
+      "Organización y planificación del estudio",
+      "Guía para flashcards y recursos de estudio",
+      "Acceso a chat privado con tutores",
+      "Clases teóricas de Step 1 y Step 2 CK",
+      "Resolución de dudas y apoyo constante",
     ],
   },
 ];
@@ -305,6 +245,7 @@ export const nav = [
     })),
   },
   { label: "Reseñas", href: "/resenas" },
+  { label: "Reacciones", href: "/reacciones" },
   { label: "Galería", href: "/galeria" },
 ] as const;
 

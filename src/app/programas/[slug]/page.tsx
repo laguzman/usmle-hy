@@ -40,7 +40,7 @@ export default async function ProgramaPage({
         <Reveal>
           <Link
             href="/programas"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition-all hover:gap-2.5"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300 transition-all hover:gap-2.5 hover:text-white"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M19 12H5M11 18l-6-6 6-6" />
@@ -55,10 +55,10 @@ export default async function ProgramaPage({
             height={224}
             className="mt-8 h-24 w-24 rounded-full"
           />
-          <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             {programa.title}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-brand-100">
             {programa.description}
           </p>
 
@@ -89,44 +89,13 @@ export default async function ProgramaPage({
           ))}
         </RevealGroup>
 
-        {programa.steps.length > 0 && (
-          <div className="mt-20">
-            <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
-                Cómo funciona
-              </p>
-              <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-                Paso a paso.
-              </h2>
-            </Reveal>
-
-            <RevealGroup className="mt-12 space-y-4">
-              {programa.steps.map((step, i) => (
-                <RevealItem key={step.title}>
-                  <div className="flex gap-6 rounded-3xl border border-ink/8 bg-white p-8">
-                    <span className="font-display shrink-0 text-2xl font-extrabold text-brand-200">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <h3 className="font-display text-xl font-bold text-ink">{step.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                </RevealItem>
-              ))}
-            </RevealGroup>
-          </div>
-        )}
-
         {programa.benefits && programa.benefits.length > 0 && (
           <div className="mt-20">
             <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
                 Te garantizamos
               </p>
-              <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+              <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 Qué incluye.
               </h2>
             </Reveal>
@@ -153,7 +122,7 @@ export default async function ProgramaPage({
 
         <Reveal
           delay={0.1}
-          className="mt-20 flex flex-col items-start gap-6 rounded-3xl bg-brand-900 px-8 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-14"
+          className="mt-20 flex flex-col items-start gap-6 rounded-3xl bg-brand-800 px-8 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-14"
         >
           <div>
             <p className="font-display text-2xl font-bold leading-snug text-white sm:text-3xl">
