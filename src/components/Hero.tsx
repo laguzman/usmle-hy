@@ -16,7 +16,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600"
+          className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300"
         >
           High-Yield Prep
         </motion.p>
@@ -25,17 +25,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display mt-6 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-6xl md:text-7xl"
+          className="font-display mt-6 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl"
         >
           Tu camino a ser MD en EE. UU.{" "}
-          <span className="italic text-brand-500">empieza aquí.</span>
+          <span className="italic text-brand-300">empieza aquí.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted"
+          className="mt-6 max-w-xl text-lg leading-relaxed text-brand-100"
         >
           Clases grupales, estrategia de examen y drills de alto rendimiento
           para Step 1, Step 2 CK y Step 3 — con acompañamiento real, en
@@ -56,7 +56,7 @@ export function Hero() {
           </Link>
           <Link
             href="/quienes-somos"
-            className="rounded-full border border-ink/15 px-7 py-3.5 text-sm font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:text-brand-600"
+            className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:text-brand-300"
           >
             Conoce el método
           </Link>
@@ -66,14 +66,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.45 }}
-          className="mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-ink/10 pt-10"
+          className="mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-white/15 pt-10"
         >
           {stats.map((s) => (
             <div key={s.label}>
-              <p className="font-display text-3xl font-extrabold text-ink sm:text-4xl">
+              <p className="font-display text-3xl font-extrabold text-white sm:text-4xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </p>
-              <p className="mt-1 text-sm text-ink-muted">{s.label}</p>
+              <p className="mt-1 text-sm text-brand-100">{s.label}</p>
             </div>
           ))}
         </motion.div>

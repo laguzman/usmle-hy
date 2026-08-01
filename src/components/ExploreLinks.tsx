@@ -21,6 +21,12 @@ const links = [
       "Historias reales de personas que encontraron estructura donde antes había ruido.",
   },
   {
+    href: "/reacciones",
+    title: "Reacciones",
+    description:
+      "Testimonios en video, directo de quienes ya lo lograron.",
+  },
+  {
     href: "/galeria",
     title: "Galería",
     description:
@@ -33,15 +39,15 @@ export function ExploreLinks() {
     <section className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
             Explora
           </p>
-          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Todo lo que necesitas saber.
           </h2>
         </Reveal>
 
-        <RevealGroup className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {links.map((l) => (
             <RevealItem key={l.href}>
               <Link

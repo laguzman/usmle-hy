@@ -1,6 +1,6 @@
 export function VideoPlaceholder({ title, color }: { title: string; color?: string }) {
   return (
-    <div className="group relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-3xl bg-brand-900">
+    <div className="group relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-3xl bg-brand-800 ring-1 ring-white/10">
       <div className="bg-grid absolute inset-0 opacity-20" />
       <div
         className="absolute inset-0 opacity-70"

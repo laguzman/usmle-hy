@@ -23,13 +23,13 @@ export default async function ContactoPage({
     <section className="relative pt-40 pb-28">
       <div className="mx-auto max-w-2xl px-6">
         <Reveal>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-600">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
             Contáctanos
           </p>
-          <h1 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+          <h1 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Hablemos de tu siguiente paso.
           </h1>
-          <p className="mt-5 text-lg leading-relaxed text-ink-muted">
+          <p className="mt-5 text-lg leading-relaxed text-brand-100">
             Cuéntanos un poco sobre ti y el programa que te interesa. Revisamos
             cada mensaje y te contactamos para ver si encajas.
           </p>
