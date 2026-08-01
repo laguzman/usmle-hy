@@ -4,7 +4,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { programas } from "@/lib/data";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
-import { VideoPlaceholder } from "@/components/VideoPlaceholder";
 
 export function generateStaticParams() {
   return programas.map((p) => ({ slug: p.slug }));
@@ -58,9 +57,6 @@ export default async function ProgramaPage({
           <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             {programa.title}
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-brand-100">
-            {programa.description}
-          </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
@@ -72,47 +68,26 @@ export default async function ProgramaPage({
           </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="mt-16">
-          <VideoPlaceholder title={programa.title} color={programa.color} />
-        </Reveal>
-
-        <RevealGroup className="mt-10 grid gap-4 sm:grid-cols-3">
-          {programa.details.map((d) => (
-            <RevealItem key={d.label}>
-              <div className="h-full rounded-2xl border border-ink/8 bg-white p-6">
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-                  {d.label}
-                </p>
-                <p className="font-display mt-2 text-lg font-bold text-ink">{d.value}</p>
-              </div>
-            </RevealItem>
-          ))}
-        </RevealGroup>
-
-        {programa.benefits && programa.benefits.length > 0 && (
-          <div className="mt-20">
+        {programa.slides.length > 0 && (
+          <div className="mt-16">
             <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
-                Te garantizamos
+                Detalles del programa
               </p>
-              <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                Qué incluye.
-              </h2>
+
             </Reveal>
 
-            <RevealGroup className="mt-10 grid gap-3 sm:grid-cols-2">
-              {programa.benefits.map((benefit) => (
-                <RevealItem key={benefit}>
-                  <div className="flex items-center gap-3 rounded-2xl border border-ink/8 bg-white px-5 py-4">
-                    <span
-                      className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white"
-                      style={{ backgroundColor: programa.color }}
-                    >
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <path d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    <p className="text-sm font-medium text-ink">{benefit}</p>
+            <RevealGroup className="mt-10 grid gap-6 sm:grid-cols-2">
+              {programa.slides.map((src, i) => (
+                <RevealItem key={src}>
+                  <div className="overflow-hidden rounded-3xl ring-1 ring-white/10">
+                    <Image
+                      src={src}
+                      alt={`${programa.title} — detalle ${i + 1}`}
+                      width={1688}
+                      height={1688}
+                      className="h-auto w-full"
+                    />
                   </div>
                 </RevealItem>
               ))}
