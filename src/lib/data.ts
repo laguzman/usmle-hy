@@ -4,26 +4,15 @@ export const stats = [
   { value: 96, suffix: "%", label: "Tasa de aprobación" },
 ];
 
-export const features = [
-  {
-    number: "01",
-    title: "La estructura del examen, como objetivo principal",
-    description:
-      "Si conoces el examen y dominas su estructura, puedes integrar los contenidos para poder pasarlo. Ese es el enfoque detrás de cada clase.",
-  },
-  {
-    number: "02",
-    title: "Estudio interdisciplinario",
-    description:
-      "Integramos los temas entre disciplinas en lugar de enseñar por materia — así aprendes a usar eliminación y las pistas del enunciado para resolver preguntas más rápido.",
-  },
-  {
-    number: "03",
-    title: "En inglés, explicado en Spanglish",
-    description:
-      "El material se revisa en inglés — el idioma real del examen — pero las explicaciones son en Spanglish, para que nada se pierda en el camino.",
-  },
+export const quienesSomosText = [
+  "USMLE HY TUTOR® es un programa que complementa los estudios individualizados que cada alumno debe llevar durante su preparación para los USMLE Steps. Nuestro enfoque no es saturar de información, sino potenciar habilidades a través del dominio de temas High Yield (HY). La preparación está diseñada para Step 1 y Step 2 CK al mismo tiempo, permitiendo un aprendizaje integrado desde el inicio. Nuestras clases están 100% enfocadas en lo más relevante, necesario e indispensable para los USMLE Steps. Se dictan en español, con explicaciones del tutor en Spanglish, facilitando la comprensión y adaptación progresiva al lenguaje del examen.",
+  "Nuestro objetivo principal es que el alumno conozca y domine la estructura real del USMLE. Cuando se entiende cómo está construido el examen, es posible integrar los contenidos de manera lógica y responder preguntas de forma más eficiente y estratégica. Trabajamos activamente en el desarrollo de la habilidad del pensamiento, enseñando a conectar temas y disciplinas de manera inmediata. El alumno aprende a identificar pistas dentro de cada pregunta y a aplicar el método de descarte, lo que le permite avanzar con mayor seguridad y rapidez en los bancos de preguntas, hasta dominar el estilo del examen real.",
+  "Las clases en USMLE HY TUTOR son aleatorias e interdisciplinarias, es decir, no siguen un orden fijo por sistemas o temas. Esta metodología replica fielmente la estructura del USMLE, donde una misma pregunta puede integrar distintas disciplinas. Los temas se repiten de forma constante, apareciendo en diferentes contextos a lo largo del tiempo. Esta repetición refuerza el aprendizaje, evita vacíos de conocimiento y asegura que el alumno no se pierda ningún contenido clave.",
+  "Al inicio, esta forma de estudio puede parecer confusa, pero con constancia y práctica durante los primeros dos meses, la mente se adapta progresivamente al ritmo del programa. Con el tiempo, todo comienza a fluir de manera natural: el alumno empieza a reconocer patrones, conectar conceptos con mayor rapidez y responder con confianza. Por esta razón, afirmamos que esta es una de las mejores metodologías para entrenar la mente exactamente como lo exige el examen real. Es importante recalcar que este programa no reemplaza el estudio personal, sino que lo complementa y optimiza, haciendo que el esfuerzo del alumno sea mucho más efectivo y enfocado en lo que realmente importa para aprobar.",
+  "USMLE HY TUTOR ofrece una preparación completa y estratégica para los USMLE Steps, combinando clases grupales, sesiones privadas, prácticas intensivas y seguimiento personalizado. El enfoque va más allá del contenido académico: aquí también se entrenan las habilidades de test-taking, la resistencia mental y la organización del estudio. Nuestro objetivo es que cada alumno cuente con las herramientas necesarias para avanzar con seguridad, mejorar progresivamente sus resultados en los NBME y llegar realmente preparado al examen real, tanto a nivel académico como estratégico y mental.",
 ];
+
+export const quienesSomosQuote = "Tu esfuerzo + nuestro método = tu éxito en el USMLE.";
 
 export const programFeatures = [
   "Clases grupales y privadas disponibles",
@@ -228,9 +217,24 @@ const programasBase = [
   },
 ];
 
+const slideCounts: Record<string, number> = {
+  "clases-grupales-step1-ck-step3": 3,
+  "clases-grupales-step2-ck": 3,
+  "test-taking-strategies-step1": 3,
+  "tts-step2-ck-sapphire": 3,
+  "stamina-drills": 3,
+  "snap-drills": 3,
+  "drills-privados": 1,
+  meteorito: 4,
+};
+
 export const programas = programasBase.map((p) => ({
   ...p,
   badge: `/brand/badges/${p.slug}.jpg`,
+  slides: Array.from(
+    { length: slideCounts[p.slug] ?? 0 },
+    (_, i) => `/brand/slides/${p.slug}/${i + 1}.jpg`
+  ),
 }));
 
 export const nav = [
