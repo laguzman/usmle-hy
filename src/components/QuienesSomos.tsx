@@ -18,10 +18,10 @@ export function QuienesSomos() {
 
         <Reveal delay={0.05} className="mt-10 flex items-center gap-4">
           <Image
-            src="/brand/ceo.jpg"
+            src="/brand/ceo.png"
             alt="Kevin Salazar Rikeros"
-            width={280}
-            height={280}
+            width={936}
+            height={936}
             className="h-20 w-20 rounded-full object-cover ring-2 ring-white/15 sm:h-24 sm:w-24"
           />
           <div>
