@@ -1,7 +1,7 @@
 export const stats = [
-  { value: 1100, suffix: "+", label: "Estudiantes acompañados" },
-  { value: 2018, suffix: "", label: "Desde" },
-  { value: 96, suffix: "%", label: "Tasa de aprobación" },
+  { value: 700, suffix: "+", label: "Estudiantes acompañados" },
+  { value: 2021, suffix: "", label: "Desde" },
+  { value: 90.6, suffix: "%", label: "Tasa de aprobación" },
 ];
 
 export const quienesSomosText = [
@@ -19,6 +19,361 @@ export const programFeatures = [
   "Drills, cursos intensivos y entrenamiento de stamina",
   "Inscripción flexible, sin fecha de inicio o fin fija",
   "Diseñado para complementar tu estudio individual, no para reemplazarlo",
+];
+
+export type FaqBlock =
+  | { type: "p"; text: string }
+  | { type: "list"; items: string[] };
+
+export type FaqItem = {
+  question: string;
+  blocks: FaqBlock[];
+};
+
+export const faq: FaqItem[] = [
+  {
+    question: "¿Esto es un curso o un programa?",
+    blocks: [
+      {
+        type: "p",
+        text: "USMLE HY Tutor es un programa de preparación, no un curso tradicional. No existe una fecha fija de inicio o finalización, ni una duración establecida. Puedes ingresar en cualquier momento del año y avanzar de acuerdo con tu ritmo, disponibilidad y objetivos.",
+      },
+      { type: "p", text: "Nuestra metodología está diseñada para adaptarse a:" },
+      {
+        type: "list",
+        items: [
+          "Alumnos que comienzan desde cero.",
+          "Alumnos que ya llevan tiempo estudiando.",
+          "Alumnos que han tenido intentos previos y desean prepararse con una estrategia diferente.",
+          "Alumnos que buscan fortalecer sus bases antes de presentar el examen.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Más que un \"paquete cerrado\", ofrecemos un acompañamiento continuo y flexible. Cada estudiante permanece en el programa el tiempo que considere necesario hasta sentirse preparado para presentar su examen y alcanzar su objetivo.",
+      },
+    ],
+  },
+  {
+    question: "¿Cuánto tiempo dura el programa?",
+    blocks: [
+      { type: "p", text: "La duración del programa depende completamente de cada estudiante." },
+      {
+        type: "p",
+        text: "No existe un tiempo exacto, ya que cada persona avanza a un ritmo diferente según sus conocimientos previos, disponibilidad y objetivos.",
+      },
+      {
+        type: "p",
+        text: "En términos generales, la preparación para Step 1 suele tomar entre 8 meses y 1 año o más, dependiendo de factores como:",
+      },
+      {
+        type: "list",
+        items: [
+          "Base académica.",
+          "Tiempo disponible para estudiar.",
+          "Trabajo, familia u otras responsabilidades.",
+          "Constancia y compromiso con el plan de estudio.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Nuestro objetivo no es que presentes el examen lo más rápido posible, sino que lo hagas cuando realmente estés preparado. Creemos que una preparación sólida, organizada y constante siempre ofrece mejores resultados que acelerar el proceso.",
+      },
+    ],
+  },
+  {
+    question: "¿Cuánto tiempo tengo que estar en el programa para pasar el examen?",
+    blocks: [
+      {
+        type: "p",
+        text: "No existe una fórmula universal y ningún programa puede garantizar un PASS. El éxito en el USMLE depende de múltiples factores que varían en cada estudiante.",
+      },
+      { type: "p", text: "El resultado está influenciado por aspectos como:" },
+      {
+        type: "list",
+        items: [
+          "Disciplina",
+          "Constancia",
+          "Base académica",
+          "Tiempo dedicado al estudio",
+          "Manejo emocional el día del examen",
+          "Compromiso con la metodología",
+        ],
+      },
+      {
+        type: "p",
+        text: "Nuestro compromiso es acompañarte durante todo el proceso con una guía de estudio estructurada, clases, evaluaciones periódicas, seguimiento y orientación para ayudarte a identificar el momento en el que realmente estés preparado para presentar el examen.",
+      },
+      {
+        type: "p",
+        text: "No buscamos que presentes el examen lo antes posible; buscamos que lo presentes cuando tengas las mayores probabilidades de obtener un PASS.",
+      },
+    ],
+  },
+  {
+    question: "Si estoy empezando desde cero, ¿puedo empezar con el programa?",
+    blocks: [
+      { type: "p", text: "Sí, y de hecho es el mejor momento para comenzar." },
+      {
+        type: "p",
+        text: "Empezar desde cero dentro de USMLE HY Tutor representa una gran ventaja, ya que desde el primer día contarás con una metodología estructurada y una guía clara para avanzar paso a paso.",
+      },
+      { type: "p", text: "¿Qué beneficios obtienes?" },
+      {
+        type: "list",
+        items: [
+          "Recibes una guía de estudio organizada desde el inicio.",
+          "Aprendes a utilizar los recursos correctos en el momento adecuado.",
+          "Evitas perder tiempo y dinero probando múltiples materiales sin una estrategia.",
+          "Construyes una base sólida que facilitará todo tu proceso de preparación.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Además, contamos con Meteorito, un subprograma diseñado especialmente para alumnos que comienzan desde cero. A través de seguimiento, organización, clases de apoyo y orientación constante, te ayudamos a estructurar tu preparación de forma realista, ordenada y sostenible.",
+      },
+      {
+        type: "p",
+        text: "La gran mayoría de nuestros alumnos que hoy han aprobado Step 1, Step 2 CK e incluso Step 3 comenzaron exactamente igual: desde cero, siguiendo nuestra metodología y confiando en el proceso.",
+      },
+    ],
+  },
+  {
+    question: "¿Este programa es para Step 1 o Step 2 CK?",
+    blocks: [
+      { type: "p", text: "Nuestro programa te prepara para Step 1 y Step 2 CK al mismo tiempo." },
+      {
+        type: "p",
+        text: "Esta es una de las principales ventajas de nuestra metodología. Desde el inicio trabajamos las bases fundamentales, permitiéndote desarrollar el razonamiento clínico y conectar los conceptos que ambos exámenes comparten.",
+      },
+      {
+        type: "p",
+        text: "Al construir una base sólida durante la preparación de Step 1, el camino hacia Step 2 CK se vuelve mucho más natural, rápido y eficiente. En lugar de empezar nuevamente desde cero, continúas fortaleciendo y aplicando los conocimientos que ya adquiriste.",
+      },
+      {
+        type: "p",
+        text: "Por eso, muchos de nuestros alumnos nos comentan que al llegar a Step 2 CK sienten que gran parte del trabajo ya está hecho. Todo termina conectándose, lo que les permite enfocarse en perfeccionar el razonamiento clínico y las estrategias propias de este examen, optimizando significativamente su tiempo de preparación.",
+      },
+      {
+        type: "p",
+        text: "En USMLE HY Tutor no preparamos un examen a la vez; construimos las bases necesarias para que avances con éxito en todo tu camino hacia la residencia médica en Estados Unidos.",
+      },
+    ],
+  },
+  {
+    question: "¿Las clases son por sistemas o por temas?",
+    blocks: [
+      {
+        type: "p",
+        text: "No. Las clases no están organizadas por sistemas ni siguen un orden tradicional.",
+      },
+      {
+        type: "p",
+        text: "Nuestra metodología es interdisciplinaria, tal como funciona el USMLE. En una misma sesión se pueden integrar distintas especialidades (por ejemplo: gastroenterología, psiquiatría, microbiología y farmacología), permitiendo que el estudiante aprenda a relacionar conceptos de la misma forma en que los encontrará durante el examen.",
+      },
+      {
+        type: "p",
+        text: "Este enfoque fortalece el Pattern Recognition, desarrolla el razonamiento clínico y entrena al estudiante para identificar rápidamente las pistas clave de cada pregunta, en lugar de memorizar información aislada.",
+      },
+      {
+        type: "p",
+        text: "Gracias a esta metodología, puedes incorporarte al programa en cualquier momento del año, sin necesidad de esperar el inicio de un sistema específico. Nuestro objetivo es que aprendas a pensar como el USMLE desde el primer día.",
+      },
+    ],
+  },
+  {
+    question: "¿Se alcanza a cubrir todo el material?",
+    blocks: [
+      { type: "p", text: "No existe un tiempo específico para \"terminar\" el material." },
+      {
+        type: "p",
+        text: "Nuestra metodología no funciona como un curso tradicional donde se completa un temario en 3, 6 o 12 meses. USMLE HY Tutor es un programa de preparación continuo e interdisciplinario, diseñado para reforzar constantemente los temas de mayor importancia (High-Yield) para el USMLE.",
+      },
+      {
+        type: "p",
+        text: "Los temas se van integrando y repitiendo desde diferentes enfoques a lo largo del tiempo, permitiendo que el estudiante fortalezca sus bases, conecte conceptos y consolide el aprendizaje con cada clase. De esta manera, tanto los alumnos nuevos como quienes ya llevan varios meses continúan obteniendo beneficios del programa.",
+      },
+      {
+        type: "p",
+        text: "El paquete que elijas no determina el tiempo que permanecerás estudiando ni la cantidad de material que recibirás. Permanecerás en el programa el tiempo que necesites, de acuerdo con tu ritmo de estudio, tu evolución y la fecha en la que planees presentar el examen.",
+      },
+      {
+        type: "p",
+        text: "Nuestro objetivo no es que \"termines un curso\", sino que desarrolles las bases, el razonamiento clínico y la confianza necesarios para obtener tu PASS.",
+      },
+    ],
+  },
+  {
+    question: "¿Qué pasa si soy nuevo y siento que sé poco?",
+    blocks: [
+      { type: "p", text: "No te asustes, es completamente normal." },
+      {
+        type: "p",
+        text: "Prácticamente todos nuestros alumnos comenzaron exactamente igual que tú. Al iniciar un programa nuevo es normal sentirse un poco perdido mientras conoces la metodología, el Drive, los horarios y la dinámica de estudio.",
+      },
+      {
+        type: "p",
+        text: "Las primeras semanas requieren un período de adaptación. Poco a poco comenzarás a entender cómo funciona el programa, a conectar los temas y a aprovechar mejor todas las herramientas que ponemos a tu disposición.",
+      },
+      {
+        type: "p",
+        text: "Lo más importante es confiar en el proceso, seguir la guía de estudio y asistir a las clases. No te compares con alumnos que llevan varios meses en el programa; todos ellos estuvieron exactamente donde tú estás hoy.",
+      },
+      {
+        type: "p",
+        text: "Dale tiempo al proceso. Mantén la constancia, sigue la metodología y muy pronto tú también sentirás que todo empieza a conectar.",
+      },
+    ],
+  },
+  {
+    question: "¿Puedo trabajar y estudiar al mismo tiempo con el programa?",
+    blocks: [
+      { type: "p", text: "Sí, es totalmente posible." },
+      {
+        type: "p",
+        text: "La gran mayoría de nuestros alumnos trabajan, tienen familia, realizan guardias o estudian otras actividades mientras se preparan para el USMLE.",
+      },
+      {
+        type: "p",
+        text: "Nuestro programa está diseñado para ser flexible. Puedes organizar tu tiempo de estudio de acuerdo con tu disponibilidad, asistir a las clases en vivo cuando te sea posible y, si no puedes conectarte, revisar las grabaciones posteriormente para no perder el ritmo de la preparación.",
+      },
+      {
+        type: "p",
+        text: "No se trata de estudiar 10 o 12 horas al día. Lo más importante es la calidad del estudio, no la cantidad. En muchos casos, dedicar 4 o 5 horas diarias, bien organizadas y enfocadas, resulta mucho más efectivo que estudiar muchas horas sin una estrategia clara.",
+      },
+      {
+        type: "p",
+        text: "Con disciplina, constancia y una buena planificación, sí es posible trabajar y prepararte al mismo tiempo.",
+      },
+    ],
+  },
+  {
+    question: "¿Necesito saber inglés para poder pasar los Steps?",
+    blocks: [
+      { type: "p", text: "No. No es necesario dominar inglés para aprobar el examen." },
+      {
+        type: "p",
+        text: "Las clases se dictan en español, con apoyo en Spanglish cuando es necesario, y están enfocadas en:",
+      },
+      {
+        type: "list",
+        items: [
+          "Identificar palabras clave",
+          "Reconocer las pistas dentro de cada pregunta",
+          "Entender qué te están preguntando, incluso sin un inglés perfecto",
+        ],
+      },
+      {
+        type: "p",
+        text: "El objetivo no es \"hablar inglés\", sino aprender a leer estratégicamente el USMLE, interpretar correctamente las preguntas y llegar a la respuesta correcta de forma eficiente.",
+      },
+      {
+        type: "p",
+        text: "Muchos de nuestros alumnos han aprobado sin tener un inglés avanzado, gracias a las estrategias de lectura, análisis y descarte que se enseñan durante el programa.",
+      },
+    ],
+  },
+  {
+    question: "¿Necesito tener todos los recursos (UWorld, NBME, libros, etc.) desde el inicio?",
+    blocks: [
+      {
+        type: "p",
+        text: "No. Uno de los principales objetivos de USMLE HY Tutor es evitar que el estudiante invierta tiempo y dinero en recursos que todavía no necesita.",
+      },
+      {
+        type: "p",
+        text: "Desde el primer día te indicaremos qué recursos utilizar, cuándo incorporarlos y cómo sacarles el mayor provecho, siguiendo el orden establecido en nuestra guía de estudio. No es necesario comprar todos los bancos de preguntas, libros o plataformas al inicio de la preparación.",
+      },
+      {
+        type: "p",
+        text: "Nuestra metodología está diseñada para que cada recurso se incorpore en el momento adecuado, de acuerdo con tu avance y tus necesidades.",
+      },
+      {
+        type: "p",
+        text: "Nuestro objetivo es que estudies mejor, no que acumules más recursos. Siguiendo la metodología, ahorrarás tiempo, dinero y evitarás la confusión que suele generar utilizar demasiados materiales al mismo tiempo.",
+      },
+    ],
+  },
+  {
+    question: "¿Ustedes ayudan con papeleos y trámites?",
+    blocks: [
+      {
+        type: "p",
+        text: "Sí, pero este acompañamiento se realiza exclusivamente a través de nuestro subprograma Meteorito.",
+      },
+      {
+        type: "p",
+        text: "Además de ofrecer clases de refuerzo, sesiones de planificación y apoyo en la organización del estudio, Meteorito brinda orientación en documentación, trámites y aspectos administrativos relacionados con la preparación para el USMLE.",
+      },
+      {
+        type: "p",
+        text: "Si tienes dudas sobre documentación, registros, cronogramas o cualquier trámite relacionado con tu preparación, el equipo de Meteorito estará disponible para orientarte y ayudarte a organizar cada paso.",
+      },
+      {
+        type: "p",
+        text: "Con Meteorito, buscamos que puedas concentrarte en estudiar mientras nosotros te ayudamos a mantener tu preparación organizada, evitando confusiones y optimizando tu tiempo durante todo el proceso.",
+      },
+    ],
+  },
+  {
+    question: "¿Cómo evalúan a los estudiantes?",
+    blocks: [
+      {
+        type: "p",
+        text: "La preparación del alumno no se evalúa únicamente con un simulacro. Aunque los NBME son una de las herramientas más importantes para medir el progreso, también analizamos la evolución del estudiante durante todo su proceso de preparación.",
+      },
+      {
+        type: "p",
+        text: "Generalmente, recomendamos comenzar a realizar NBME a partir del sexto mes de estudio, ya que permiten evaluar el razonamiento clínico, identificar fortalezas y debilidades, y estimar el nivel de preparación para el examen real.",
+      },
+      {
+        type: "p",
+        text: "Además, con Meteorito, las tutoras realizan un seguimiento continuo del estudiante, revisando el cumplimiento de la guía de estudio, el avance en bancos de preguntas, los resultados de los simulacros y el progreso general de la preparación.",
+      },
+      {
+        type: "p",
+        text: "La recomendación de presentar el examen no depende únicamente de aprobar un NBME, sino del conjunto de múltiples factores: el desempeño en los simulacros, el cumplimiento de la metodología, el progreso académico, la constancia y la confianza del estudiante.",
+      },
+    ],
+  },
+  {
+    question: "¿Cuánto cuesta el programa y qué planes de pago tienen?",
+    blocks: [
+      {
+        type: "p",
+        text: "Contamos con diferentes programas y modalidades, por lo que la inversión varía según el plan que decidas tomar. Contáctanos y con gusto te compartimos el detalle de cada opción.",
+      },
+      {
+        type: "p",
+        text: "Todos nuestros programas se pagan de contado. Actualmente no ofrecemos financiamiento ni pagos en cuotas directamente con USMLE HY Tutor.",
+      },
+      {
+        type: "p",
+        text: "Si deseas diferir el pago, puedes realizarlo con tarjeta de crédito y posteriormente solicitar el diferido directamente con tu banco, de acuerdo con las opciones que este ofrezca.",
+      },
+      {
+        type: "p",
+        text: "De esta manera podrás organizar tus pagos de la forma que mejor se adapte a tus necesidades, sin afectar tu proceso de preparación.",
+      },
+    ],
+  },
+  {
+    question: "¿Qué opción me recomiendan para empezar si soy nuevo 100%?",
+    blocks: [
+      {
+        type: "p",
+        text: "La mejor opción para comenzar son las clases grupales, ya que te permiten construir una base sólida y adaptarte a la metodología de estudio. Desde el inicio también recomendamos Meteorito, por el seguimiento continuo y la organización que brinda durante todo el proceso.",
+      },
+      {
+        type: "p",
+        text: "Snap Drills y Stamina Drills pueden incorporarse desde las primeras etapas para fortalecer el razonamiento clínico, el Pattern Recognition, la velocidad de respuesta y la resistencia mental. Más adelante, Test Taking Strategies ayuda a perfeccionar la estrategia para responder preguntas, mientras que los Drills Privados están especialmente recomendados para la recta final de la preparación, antes de presentar el examen.",
+      },
+      {
+        type: "p",
+        text: "Además, Test Taking Strategies también puede iniciarse desde el comienzo de la preparación. Este programa acelera significativamente el aprendizaje, ya que desde el inicio enseña a interpretar preguntas, identificar pistas, manejar el tiempo y desarrollar una estrategia efectiva para responder el examen.",
+      },
+    ],
+  },
 ];
 
 const programasBase = [
@@ -217,24 +572,9 @@ const programasBase = [
   },
 ];
 
-const slideCounts: Record<string, number> = {
-  "clases-grupales-step1-ck-step3": 3,
-  "clases-grupales-step2-ck": 3,
-  "test-taking-strategies-step1": 3,
-  "tts-step2-ck-sapphire": 3,
-  "stamina-drills": 3,
-  "snap-drills": 3,
-  "drills-privados": 1,
-  meteorito: 4,
-};
-
 export const programas = programasBase.map((p) => ({
   ...p,
   badge: `/brand/badges/${p.slug}.jpg`,
-  slides: Array.from(
-    { length: slideCounts[p.slug] ?? 0 },
-    (_, i) => `/brand/slides/${p.slug}/${i + 1}.jpg`
-  ),
 }));
 
 export const nav = [
@@ -249,8 +589,7 @@ export const nav = [
     })),
   },
   { label: "Reseñas", href: "/resenas" },
-  { label: "Reacciones", href: "/reacciones" },
-  { label: "Galería", href: "/galeria" },
+  { label: "FAQ", href: "/faq" },
 ] as const;
 
 export const resenas = [

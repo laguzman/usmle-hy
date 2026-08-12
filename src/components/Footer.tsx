@@ -39,8 +39,7 @@ export function Footer() {
                 <li><Link href="/quienes-somos" className="transition-colors hover:text-brand-600">Quiénes Somos</Link></li>
                 <li><Link href="/programas" className="transition-colors hover:text-brand-600">Programas</Link></li>
                 <li><Link href="/resenas" className="transition-colors hover:text-brand-600">Reseñas</Link></li>
-                <li><Link href="/reacciones" className="transition-colors hover:text-brand-600">Reacciones</Link></li>
-                <li><Link href="/galeria" className="transition-colors hover:text-brand-600">Galería</Link></li>
+                <li><Link href="/faq" className="transition-colors hover:text-brand-600">FAQ</Link></li>
                 <li><Link href="/contacto" className="transition-colors hover:text-brand-600">Contáctanos</Link></li>
               </ul>
             </div>

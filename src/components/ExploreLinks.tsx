@@ -21,16 +21,10 @@ const links = [
       "Historias reales de personas que encontraron estructura donde antes había ruido.",
   },
   {
-    href: "/reacciones",
-    title: "Reacciones",
+    href: "/faq",
+    title: "FAQ",
     description:
-      "Testimonios en video, directo de quienes ya lo lograron.",
-  },
-  {
-    href: "/galeria",
-    title: "Galería",
-    description:
-      "Clases en vivo, simulacros y celebraciones de quienes ya lo lograron.",
+      "Respuestas a las dudas más comunes sobre el programa.",
   },
 ];
 
