@@ -6,32 +6,55 @@ export function QuienesSomos() {
   return (
     <section className="relative pt-40 pb-28">
       <div className="mx-auto max-w-6xl px-6">
-        <Reveal className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
-            Quiénes somos
-          </p>
-          <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Conoce el examen.{" "}
-            <span className="text-brand-300">Domina su estructura.</span>
-          </h2>
-        </Reveal>
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16">
+          <Reveal className="order-1 lg:order-none lg:col-start-1 lg:row-start-1">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
+              Quiénes somos
+            </p>
+            <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+              Conoce el examen.{" "}
+              <span className="text-brand-300">Domina su estructura.</span>
+            </h2>
+          </Reveal>
 
-        <Reveal delay={0.05} className="mt-10 flex items-center gap-4">
-          <Image
-            src="/brand/ceo.png"
-            alt="Kevin Salazar Rikeros"
-            width={936}
-            height={936}
-            className="h-20 w-20 rounded-full object-cover ring-2 ring-white/15 sm:h-24 sm:w-24"
-          />
-          <div>
-            <p className="font-display text-lg font-bold text-white">Kevin Salazar Rikeros</p>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-300">CEO</p>
-          </div>
-        </Reveal>
+          <Reveal
+            delay={0.05}
+            className="order-2 flex flex-col items-center lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:items-center lg:self-center xl:items-end xl:self-center "
+          >
+            {/* Circular photo — mobile/tablet only */}
+            <Image
+              src="/brand/ceo.png"
+              alt="Kevin Salazar Rikeros"
+              width={936}
+              height={936}
+              priority
+              className="h-32 w-32 rounded-full object-cover ring-2 ring-white/15 sm:h-40 sm:w-40 md:h-52 md:w-52 lg:hidden"
+            />
+            {/* Full cutout photo — large screens only */}
+            <Image
+              src="/brand/ceo_2.png"
+              alt="Kevin Salazar Rikeros"
+              width={1545}
+              height={2000}
+              priority
+              className="hidden lg:block lg:h-[26rem] lg:w-auto xl:h-[32rem]"
+            />
+            <div className="mt-4 text-center lg:text-right">
+              <p className="font-display text-lg font-bold text-white">Kevin Salazar Rikeros</p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-brand-300">CEO</p>
+            </div>
+          </Reveal>
 
-        <RevealGroup className="mt-10 max-w-3xl space-y-6">
-          {quienesSomosText.slice(0, 3).map((paragraph, i) => (
+          <Reveal
+            delay={0.1}
+            className="order-3 lg:order-none lg:col-start-1 lg:row-start-2 lg:self-start"
+          >
+            <p className="text-lg leading-relaxed text-brand-100">{quienesSomosText[0]}</p>
+          </Reveal>
+        </div>
+
+        <RevealGroup className="mt-12 max-w-3xl space-y-6">
+          {quienesSomosText.slice(1, 3).map((paragraph, i) => (
             <RevealItem key={i}>
               <p className="text-lg leading-relaxed text-brand-100">{paragraph}</p>
             </RevealItem>
