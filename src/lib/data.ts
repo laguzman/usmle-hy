@@ -589,6 +589,8 @@ export const nav = [
     })),
   },
   { label: "Reseñas", href: "/resenas" },
+  { label: "Videos", href: "/reacciones" },
+  { label: "Galeria", href: "/galeria" },
   { label: "FAQ", href: "/faq" },
 ] as const;
 
