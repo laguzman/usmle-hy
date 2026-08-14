@@ -10,10 +10,11 @@ export async function POST(request: Request) {
   const nombre = typeof body?.nombre === "string" ? body.nombre.trim() : "";
   const email = typeof body?.email === "string" ? body.email.trim() : "";
   const telefono = typeof body?.telefono === "string" ? body.telefono.trim() : "";
+  const pais = typeof body?.pais === "string" ? body.pais.trim() : "";
   const programaSlug = typeof body?.programa === "string" ? body.programa.trim() : "";
   const mensaje = typeof body?.mensaje === "string" ? body.mensaje.trim() : "";
 
-  if (!nombre || !email || !mensaje) {
+  if (!nombre || !email || !telefono || !pais || !mensaje) {
     return NextResponse.json(
       { ok: false, error: "Faltan campos requeridos." },
       { status: 400 }
@@ -40,7 +41,8 @@ export async function POST(request: Request) {
     text: [
       `Nombre: ${nombre}`,
       `Correo: ${email}`,
-      telefono && `Teléfono: ${telefono}`,
+      `Teléfono: ${telefono}`,
+      `País: ${pais}`,
       `Programa de interés: ${programaTitle ?? "No especificado"}`,
       "",
       "Mensaje:",

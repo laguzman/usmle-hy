@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { programas } from "@/lib/data";
+import { programas, countries } from "@/lib/data";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -20,6 +20,7 @@ export function ContactForm({ initialPrograma }: { initialPrograma?: string }) {
       nombre: String(form.get("nombre") ?? ""),
       email: String(form.get("email") ?? ""),
       telefono: String(form.get("telefono") ?? ""),
+      pais: String(form.get("pais") ?? ""),
       programa: String(form.get("programa") ?? ""),
       mensaje: String(form.get("mensaje") ?? ""),
     };
@@ -96,34 +97,57 @@ export function ContactForm({ initialPrograma }: { initialPrograma?: string }) {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="telefono" className="text-sm font-semibold text-ink">
-            Teléfono <span className="font-normal text-ink-muted">(opcional)</span>
+            Teléfono
           </label>
           <input
             id="telefono"
             name="telefono"
             type="tel"
+            required
             className="mt-2 w-full rounded-xl border border-ink/15 px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-brand-400"
             placeholder="+52 000 000 0000"
           />
         </div>
         <div>
-          <label htmlFor="programa" className="text-sm font-semibold text-ink">
-            Programa de interés
+          <label htmlFor="pais" className="text-sm font-semibold text-ink">
+            País
           </label>
           <select
-            id="programa"
-            name="programa"
-            defaultValue={initialPrograma ?? ""}
+            id="pais"
+            name="pais"
+            required
+            defaultValue=""
             className="mt-2 w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-brand-400"
           >
-            <option value="">No estoy seguro todavía</option>
-            {programas.map((p) => (
-              <option key={p.slug} value={p.slug}>
-                {p.title}
+            <option value="" disabled>
+              Selecciona tu país
+            </option>
+            {countries.map((c) => (
+              <option key={c} value={c}>
+                {c}
               </option>
             ))}
           </select>
         </div>
+      </div>
+
+      <div>
+        <label htmlFor="programa" className="text-sm font-semibold text-ink">
+          Programa de interés
+        </label>
+        <select
+          id="programa"
+          name="programa"
+          defaultValue={initialPrograma ?? ""}
+          className="mt-2 w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-brand-400"
+        >
+          <option value="">No estoy seguro todavía</option>
+          {programas.map((p) => (
+            <option key={p.slug} value={p.slug}>
+              {p.title}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>

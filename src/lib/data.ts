@@ -1,3 +1,28 @@
+export const countries = [
+  "Argentina",
+  "Bolivia",
+  "Chile",
+  "Colombia",
+  "Costa Rica",
+  "Cuba",
+  "Ecuador",
+  "El Salvador",
+  "España",
+  "Estados Unidos",
+  "Guatemala",
+  "Honduras",
+  "México",
+  "Nicaragua",
+  "Panamá",
+  "Paraguay",
+  "Perú",
+  "Puerto Rico",
+  "República Dominicana",
+  "Uruguay",
+  "Venezuela",
+  "Otro",
+];
+
 export const stats = [
   { value: 700, suffix: "+", label: "Estudiantes acompañados" },
   { value: 2021, suffix: "", label: "Desde" },
