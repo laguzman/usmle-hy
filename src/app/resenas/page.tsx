@@ -33,7 +33,7 @@ export default async function ResenasPage() {
               Tu experiencia también puede inspirar a otros
             </h2>
             <p className="mt-4 text-brand-100">
-              Si has tomado parte de USMLE HY TUTOR, nos encantaría conocer tu experiencia.
+              Si has sido parte de USMLE HY TUTOR, nos encantaría conocer tu experiencia.
             </p>
           </Reveal>
 

@@ -26,7 +26,7 @@ export function Resenas({ reviews }: { reviews: ResenaItem[] }) {
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
             Conoce la experiencia de estudiantes que confiaron en USMLE HY TUTOR para
-            acompañarnos durante su preparación para los USMLE Steps.
+            acompañarlos durante su preparación para los USMLE Steps.
           </p>
         </Reveal>
 

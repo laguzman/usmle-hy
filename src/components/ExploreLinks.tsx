@@ -28,7 +28,7 @@ const links = [
   },
   {
     href: "/galeria",
-    title: "Galeria",
+    title: "Galería",
     description:
       "Momentos de la comunidad: clases en vivo, simulacros y celebraciones.",
   },
