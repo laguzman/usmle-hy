@@ -138,7 +138,7 @@ export function ReviewForm() {
             name="programa"
             className="mt-2 w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-brand-400"
           >
-            <option value="">Prefiero no decir</option>
+            <option value="">Grupo en general</option>
             {programas.map((p) => (
               <option key={p.slug} value={p.slug}>
                 {p.title}

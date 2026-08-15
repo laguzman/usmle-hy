@@ -12,6 +12,7 @@ const icons: Record<string, ProgramIconKey> = {
   "snap-drills": "bolt",
   "drills-privados": "lock",
   meteorito: "meteor",
+  "consultoria-1-1": "chat",
 };
 
 export function ProgramasIconGrid() {

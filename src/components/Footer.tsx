@@ -58,15 +58,12 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-10 md:flex-row">
           <div className="max-w-sm">
             <Image
-              src="/brand/logo-lockup.jpg"
+              src="/brand/logo-badge.jpg"
               alt="USMLE HY TUTOR"
-              width={1518}
-              height={334}
-              className="h-10 w-auto rounded-md"
+              width={1254}
+              height={1254}
+              className="h-24 w-24 rounded-md"
             />
-            <p className="mt-4 text-sm leading-relaxed text-ink-muted">
-              High-yield prep. Your journey to becoming an MD in the U.S. starts here.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
