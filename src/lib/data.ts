@@ -31,6 +31,88 @@ export const gallerySections = [
   },
 ];
 
+export type TeamMember = {
+  name: string;
+  role: string;
+  photo: string;
+  bio: string[];
+};
+
+export const teamMembers: TeamMember[] = [
+  {
+    name: "Kevin",
+    role: "Founder & CEO | USMLE Mentor & Instructor",
+    photo: "/gallery/equipo/kevin.jpeg",
+    bio: [
+      "Kevin Salazar Rikeros, médico ecuatoriano que llegó a Estados Unidos en 2017 para comenzar su preparación para los USMLE. Tras completar y aprobar sus exámenes, en 2022 fundó USMLE HY TUTOR®️, comenzando con un solo estudiante y construyendo una comunidad que hoy supera los 950 estudiantes acompañados.",
+      "La medicina y la enseñanza son dos de sus grandes pasiones. Su experiencia dio origen a una metodología enfocada en High-Yield content, Pattern Recognition, razonamiento clínico y Test-Taking Strategies, participando activamente en la enseñanza y desarrollo de los programas.",
+    ],
+  },
+  {
+    name: "Matu",
+    role: "Dirección Administrativa",
+    photo: "/gallery/equipo/matu.jpeg",
+    bio: [
+      "Maria Claudia Weir, empresaria ecuatoriana con más de 15 años de experiencia en el sector camaronero, vinculada a DAPETSA en Ecuador. En 2024 asumió el liderazgo de la expansión de la compañía hacia Estados Unidos, donde actualmente dirige DAPETSA Corp, enfocándose en estrategia, operaciones y crecimiento internacional.",
+      "Su experiencia en gestión, organización, marketing y desarrollo de proyectos también forma parte del crecimiento de USMLE HY TUTOR®️, trabajando junto a Kevin en la planificación, comunicación y ejecución de iniciativas para el desarrollo de la marca y su comunidad.",
+    ],
+  },
+  {
+    name: "Faviana",
+    role: "Tutora",
+    photo: "/gallery/equipo/faviana.jpeg",
+    bio: [
+      "Faviana Bracho, médica graduada de La Universidad del Zulia (LUZ) e International Medical Graduate. Ha completado y aprobado USMLE Step 1 y Step 2 CK y cuenta con certificación ECFMG.",
+      "Como tutora de USMLE HY TUTOR®️, aporta su experiencia en el proceso USMLE para acompañar a los estudiantes en su preparación, reforzando conceptos High-Yield, razonamiento clínico y estrategias orientadas al examen. Se caracteriza por su dedicación, constancia y compromiso con el aprendizaje continuo.",
+    ],
+  },
+  {
+    name: "Maiva",
+    role: "Tutora",
+    photo: "/gallery/equipo/maiva.jpeg",
+    bio: [
+      "Maiva Salazar Ortega, médica cirujana venezolana, especialista en Pediatría y Puericultura, con más de 15 años de trayectoria clínica nacional e internacional. Su experiencia profesional incluye el manejo integral de la salud infantil y experiencia práctica tanto en Venezuela como en Estados Unidos.",
+      "Como tutora de USMLE HY TUTOR®️, participa en la preparación de estudiantes para los USMLE, reforzando contenidos de Step 1 y Step 2 CK, asociaciones de conceptos y estrategias para la resolución eficiente de preguntas. Su experiencia clínica aporta una perspectiva práctica al aprendizaje y al desarrollo del razonamiento médico.",
+    ],
+  },
+  {
+    name: "Yuliet",
+    role: "Tutora",
+    photo: "/gallery/equipo/yuliet.jpeg",
+    bio: [
+      "Yuliet Milian, médica graduada de la Universidad de Ciencias Médicas Raúl Dorticós Torrado en Cienfuegos, Cuba, e International Medical Graduate. Cuenta con experiencia clínica en Medicina Interna, Cirugía, Pediatría, Ginecología y Obstetricia, además de atención primaria. Actualmente se desempeña como Medical Assistant en Estados Unidos, ha completado y aprobado el USMLE Step 1 y continúa su preparación para Step 2 CK.",
+      "Como tutora de USMLE HY TUTOR®️, acompaña principalmente a estudiantes de Step 1, aportando sus conocimientos y experiencia durante la preparación. Su enfoque integra conceptos High-Yield, ciencias básicas, razonamiento médico y estrategias para la resolución de preguntas. Se caracteriza por su responsabilidad, perseverancia, compromiso y lealtad, cualidades que refleja tanto en su propio camino USMLE como en el acompañamiento a sus estudiantes.",
+    ],
+  },
+  {
+    name: "Diego",
+    role: "Tutor",
+    photo: "/gallery/equipo/diego.jpeg",
+    bio: [
+      "Diego Rosado Moreno, médico ecuatoriano graduado de la Universidad de Especialidades Espíritu Santo (UEES). Ha completado y aprobado USMLE Step 1 y Step 2 CK, cuenta con certificación ECFMG y logró exitosamente su Match en Boston, donde continuará su formación médica en Estados Unidos.",
+      "Como tutor del grupo de Step 2 CK de USMLE HY TUTOR®️, acompaña a los estudiantes aportando su experiencia y conocimientos en razonamiento clínico, conceptos High-Yield y estrategias para la resolución de preguntas. Se caracteriza por su actitud positiva, empatía, compromiso y energía única, creando un ambiente de aprendizaje cercano y motivador para sus estudiantes.",
+    ],
+  },
+  {
+    name: "Andrea",
+    role: "Tutora",
+    photo: "/gallery/equipo/andrea.jpeg",
+    bio: [
+      "Andrea Tobar Torres, médica cirujana ecuatoriana, con experiencia en el área de la salud y un fuerte interés por la formación continua y el desarrollo de sus habilidades clínicas. Se caracteriza por su responsabilidad, compromiso y dedicación tanto en su práctica profesional como en la enseñanza.",
+      "Como tutora de USMLE HY TUTOR®️, participa en la preparación de estudiantes de Step 1 y forma parte del equipo de Meteorito, donde acompaña a cientos de alumnos en la organización y planificación de sus estudios, seguimiento de su progreso y desarrollo de una preparación más estructurada y constante. Su objetivo es brindar orientación y apoyo durante cada etapa del proceso.",
+    ],
+  },
+  {
+    name: "Margarita",
+    role: "Tutora",
+    photo: "/gallery/equipo/margarita.jpeg",
+    bio: [
+      "Margarita Amaya Torres, médica hondureña y mamá, forma parte del equipo de tutores de USMLE HY TUTOR®️, donde participa activamente en la preparación de estudiantes de Step 1. Se caracteriza por su carisma, compromiso y disposición constante para orientar y apoyar a quienes atraviesan este exigente proceso.",
+      "Además, forma parte del equipo de Meteorito, acompañando a cientos de estudiantes en la organización y planificación de sus estudios. Como madre, aporta una perspectiva especialmente cercana para quienes deben equilibrar maternidad, responsabilidades personales y preparación para los USMLE, ayudándolos a aprovechar mejor su tiempo, mantener la constancia y avanzar de manera organizada hacia sus objetivos.",
+    ],
+  },
+];
+
 export const countries = [
   "Argentina",
   "Bolivia",
@@ -57,9 +139,9 @@ export const countries = [
 ];
 
 export const stats = [
-  { value: 950, suffix: "+", label: "Estudiantes acompañados", label_d: "Una comunidad que continúa creciendo"},
-  { value: 2022, suffix: "", label: "Preparando para los USMLE Steps", label_d: "Acompañamiento, estrategia y entrenamiento constante" },
-  { value: 90.6, suffix: "%", label: "Passing Rate", label_d: "Resultados reportados por nuestros estudiantes" },
+  { value: 91, suffix: "%", prefix: "", label: "Passing Rate", label_d: "Resultados reportados por nuestros estudiantes." },
+  { value: 950, suffix: "+", prefix: "", label: "Estudiantes acompañados", label_d: "Una comunidad internacional que sigue creciendo." },
+  { value: 2022, suffix: "", prefix: "Desde ", label: "Preparando para los USMLE Steps", label_d: "Experiencia, estrategia y acompañamiento en cada etapa." },
 ];
 
 export const quienesSomosText = [

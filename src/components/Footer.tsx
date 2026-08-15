@@ -62,7 +62,7 @@ export function Footer() {
               alt="USMLE HY TUTOR"
               width={1254}
               height={1254}
-              className="h-24 w-24 rounded-md"
+              className="h-40 w-40 rounded-md sm:h-56 sm:w-56"
             />
           </div>
 
@@ -113,7 +113,6 @@ export function Footer() {
                   </a>
                 ))}
               </div>
-              <p className="mt-4 text-sm text-ink-muted">@usmle_hy_tutor</p>
             </div>
           </div>
         </div>
