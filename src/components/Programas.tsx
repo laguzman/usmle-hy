@@ -27,11 +27,6 @@ export function Programas() {
                 href={`/programas/${p.slug}`}
                 className="group relative flex h-full flex-col rounded-3xl border border-ink/8 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5"
               >
-                {p.highlight && (
-                  <span className="absolute right-6 top-6 rounded-full bg-brand-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-brand-600">
-                    Premium
-                  </span>
-                )}
                 <h3 className="font-display text-lg font-bold leading-snug text-ink">
                   {p.title}
                 </h3>

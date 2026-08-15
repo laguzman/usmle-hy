@@ -87,9 +87,6 @@ export default async function ProgramaPage({
         {programa.benefits && programa.benefits.length > 0 && (
           <div className="mt-20">
             <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
-                Te garantizamos
-              </p>
               <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 Qué incluye.
               </h2>
@@ -122,9 +119,6 @@ export default async function ProgramaPage({
           <div>
             <p className="font-display text-2xl font-bold leading-snug text-white sm:text-3xl">
               ¿Te interesa este programa?
-            </p>
-            <p className="mt-3 max-w-lg text-brand-100">
-              Cuéntanos tu situación y te contactamos para ver si encajas en este programa.
             </p>
           </div>
           <Link

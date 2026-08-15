@@ -71,7 +71,7 @@ export function Footer() {
 
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
             <div>
-              <p className="font-display text-sm font-bold text-ink">Empresa</p>
+              <p className="font-display text-sm font-bold text-ink">Explora</p>
               <ul className="mt-4 space-y-2.5 text-sm text-ink-muted">
                 <li><Link href="/quienes-somos" className="transition-colors hover:text-brand-600">Quiénes Somos</Link></li>
                 <li><Link href="/programas" className="transition-colors hover:text-brand-600">Programas</Link></li>
