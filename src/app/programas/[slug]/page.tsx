@@ -47,15 +47,6 @@ export default async function ProgramaPage({
             Todos los programas
           </Link>
 
-          {programa.badge && (
-            <Image
-              src={programa.badge}
-              alt=""
-              width={224}
-              height={224}
-              className="mt-8 h-24 w-24 rounded-full"
-            />
-          )}
           <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             {programa.title}
           </h1>
