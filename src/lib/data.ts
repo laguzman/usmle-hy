@@ -1,3 +1,36 @@
+export const gallerySections = [
+  {
+    key: "eventos",
+    title: "Eventos",
+    description: "Encuentros, actividades y momentos especiales de nuestra comunidad.",
+    cta: "Ver galería",
+  },
+  {
+    key: "feedbacks",
+    title: "Feedbacks",
+    description: "Mensajes y experiencias compartidas por nuestros estudiantes durante su preparación.",
+    cta: "Ver feedbacks",
+  },
+  {
+    key: "pass",
+    title: "Pass",
+    description: "Celebramos cada examen aprobado y cada meta alcanzada por nuestros estudiantes.",
+    cta: "Ver resultados",
+  },
+  {
+    key: "reacciones",
+    title: "Reacciones",
+    description: "Reacciones de nuestros estudiantes al conocer sus resultados y logros.",
+    cta: "Ver reacciones",
+  },
+  {
+    key: "equipo",
+    title: "Nuestro Equipo",
+    description: "Conoce a las personas que forman parte de USMLE HY TUTOR® y acompañan a nuestros estudiantes.",
+    cta: "Conocer al equipo",
+  },
+];
+
 export const countries = [
   "Argentina",
   "Bolivia",
