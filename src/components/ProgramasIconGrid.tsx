@@ -5,12 +5,12 @@ import { programas } from "@/lib/data";
 
 const icons: Record<string, ProgramIconKey> = {
   "clases-grupales-step1-ck-step3": "group",
-  "clases-grupales-step2-ck": "group",
+  "clases-grupales-step2-ck": "stethoscope",
   "test-taking-strategies-step1": "checklist",
   "tts-step2-ck-sapphire": "diamond",
   "stamina-drills": "run",
   "snap-drills": "bolt",
-  "drills-privados": "lock",
+  "drills-privados": "target",
   meteorito: "meteor",
   "consultoria-1-1": "chat",
 };
@@ -28,26 +28,26 @@ export function ProgramasIconGrid() {
           </h2>
         </Reveal>
 
-        <RevealGroup className="mt-16 grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4">
+        <RevealGroup className="mt-16 grid grid-cols-2 gap-x-8 gap-y-14 lg:grid-cols-4">
           {programas.map((p) => (
             <RevealItem key={p.slug}>
               <Link href={`/programas/${p.slug}`} className="group flex flex-col items-center text-center">
                 <span
-                  className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110 sm:h-24 sm:w-24"
-                  style={{ backgroundColor: p.color, boxShadow: `0 12px 24px -8px ${p.color}80` }}
+                  className="flex h-28 w-28 shrink-0 items-center justify-center rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110 sm:h-36 sm:w-36"
+                  style={{ backgroundColor: p.color, boxShadow: `0 16px 32px -10px ${p.color}90` }}
                 >
-                  <ProgramIcon icon={icons[p.slug]} className="h-9 w-9 sm:h-10 sm:w-10" />
+                  <ProgramIcon icon={icons[p.slug]} className="h-12 w-12 sm:h-16 sm:w-16" />
                 </span>
                 <span
-                  className="mt-1.5 h-2 w-2 rounded-full"
+                  className="mt-2 h-2.5 w-2.5 rounded-full"
                   style={{ backgroundColor: p.color }}
                 />
                 <span
-                  className="mt-1.5 h-6 border-l-2 border-dotted"
+                  className="mt-2 h-7 border-l-2 border-dotted"
                   style={{ borderColor: p.color }}
                 />
                 <span
-                  className="flex min-h-[3.25rem] w-full max-w-[11rem] items-center justify-center rounded-xl px-3 py-2 text-xs font-bold uppercase leading-tight tracking-wide text-white transition-transform duration-300 group-hover:scale-105 sm:text-sm"
+                  className="flex min-h-[3.75rem] w-full max-w-[13rem] items-center justify-center rounded-2xl px-4 py-3 text-sm font-bold uppercase leading-tight tracking-wide text-white transition-transform duration-300 group-hover:scale-105 sm:text-base"
                   style={{ backgroundColor: p.color }}
                 >
                   {p.title}

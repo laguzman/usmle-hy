@@ -11,12 +11,11 @@ export function Programas() {
             Nuestros programas
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Una preparación para cada etapa de tu camino
+            Un programa para cada etapa de tu camino
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
-            Cada estudiante tiene necesidades y objetivos diferentes. Explora nuestros
-            programas y encuentra la modalidad de preparación que mejor se adapte a tu
-            etapa, tu ritmo y tus objetivos para los USMLE Steps.
+            Explora nuestros programas y encuentra la modalidad de preparación que mejor
+            se adapte a tus objetivos, tu ritmo y tus necesidades para los USMLE Steps.
           </p>
         </Reveal>
 

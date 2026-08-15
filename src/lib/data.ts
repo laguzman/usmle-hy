@@ -523,7 +523,7 @@ const programasBase = [
     details: [
       { label: "Entrenamiento", value: "12 horas al mes divididas en 3 o 4 sesiones" },
       { label: "Formato", value: "Sesiones en vivo · No quedan grabadas" },
-      { label: "Para quién", value: "Estudiantes de Step 2 CK · Cupo limitado" },
+      { label: "Para quién", value: "Estudiantes de Step 2 CK" },
     ],
     note: "Los días y horarios pueden estar sujetos a cambios y se comunican con anticipación.",
     benefits: [
