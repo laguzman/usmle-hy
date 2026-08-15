@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { gallerySections } from "@/lib/data";
+import { gallerySections, teamMembers } from "@/lib/data";
 import { getGalleryImages } from "@/lib/gallery";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
+import { TeamGrid } from "@/components/TeamGrid";
 
 export function generateStaticParams() {
   return gallerySections.map((s) => ({ category: s.key }));
@@ -76,7 +77,13 @@ export default async function GaleriaCategoriaPage({
           </p>
         </Reveal>
 
-        {images.length === 1 ? (
+        {category === "equipo" ? (
+          teamMembers.length > 0 ? (
+            <TeamGrid members={teamMembers} />
+          ) : (
+            <p className="mt-12 text-brand-100">Todavía no hay miembros del equipo agregados.</p>
+          )
+        ) : images.length === 1 ? (
           <Reveal delay={0.05} className="mt-12">
             <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl bg-brand-50">
               <Image

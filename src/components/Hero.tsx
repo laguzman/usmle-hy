@@ -19,7 +19,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display mt-6 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-6xl"
         >
-          Tu camino a ser MD en EE. UU.{" "}
+          Tu camino a ser MD en <br /> EE. UU.{" "}
           <span className="italic text-brand-300">empieza aquí.</span>
         </motion.h1>
 
@@ -45,7 +45,9 @@ export function Hero() {
           className="mt-12 max-w-xl text-lg leading-relaxed text-brand-100"
         >
           USMLE Step 1 • Step 2CK • Step 3
+          <br />
           High-Yield Prep | Test-Taking Strategies
+          <br />
           Live lectures • Stamina • Drills
         </motion.p>
 
@@ -72,6 +74,7 @@ export function Hero() {
           {stats.map((s) => (
             <div key={s.label}>
               <p className="font-display text-3xl font-extrabold text-white sm:text-4xl">
+                {s.prefix}
                 <Counter value={s.value} suffix={s.suffix} />
               </p>
               <p className="mt-1 text-sm text-brand-100 font-bold">{s.label}</p>
