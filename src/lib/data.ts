@@ -30,21 +30,23 @@ export const stats = [
 ];
 
 export const quienesSomosText = [
-  "USMLE HY TUTOR® es un programa que complementa los estudios individualizados que cada alumno debe llevar durante su preparación para los USMLE Steps. Nuestro enfoque no es saturar de información, sino potenciar habilidades a través del dominio de temas High Yield (HY). La preparación está diseñada para Step 1 y Step 2 CK al mismo tiempo, permitiendo un aprendizaje integrado desde el inicio. Nuestras clases están 100% enfocadas en lo más relevante, necesario e indispensable para los USMLE Steps. Se dictan en español, con explicaciones del tutor en Spanglish, facilitando la comprensión y adaptación progresiva al lenguaje del examen.",
-  "Nuestro objetivo principal es que el alumno conozca y domine la estructura real del USMLE. Cuando se entiende cómo está construido el examen, es posible integrar los contenidos de manera lógica y responder preguntas de forma más eficiente y estratégica. Trabajamos activamente en el desarrollo de la habilidad del pensamiento, enseñando a conectar temas y disciplinas de manera inmediata. El alumno aprende a identificar pistas dentro de cada pregunta y a aplicar el método de descarte, lo que le permite avanzar con mayor seguridad y rapidez en los bancos de preguntas, hasta dominar el estilo del examen real.",
-  "Las clases en USMLE HY TUTOR son aleatorias e interdisciplinarias, es decir, no siguen un orden fijo por sistemas o temas. Esta metodología replica fielmente la estructura del USMLE, donde una misma pregunta puede integrar distintas disciplinas. Los temas se repiten de forma constante, apareciendo en diferentes contextos a lo largo del tiempo. Esta repetición refuerza el aprendizaje, evita vacíos de conocimiento y asegura que el alumno no se pierda ningún contenido clave.",
-  "Al inicio, esta forma de estudio puede parecer confusa, pero con constancia y práctica durante los primeros dos meses, la mente se adapta progresivamente al ritmo del programa. Con el tiempo, todo comienza a fluir de manera natural: el alumno empieza a reconocer patrones, conectar conceptos con mayor rapidez y responder con confianza. Por esta razón, afirmamos que esta es una de las mejores metodologías para entrenar la mente exactamente como lo exige el examen real. Es importante recalcar que este programa no reemplaza el estudio personal, sino que lo complementa y optimiza, haciendo que el esfuerzo del alumno sea mucho más efectivo y enfocado en lo que realmente importa para aprobar.",
-  "USMLE HY TUTOR ofrece una preparación completa y estratégica para los USMLE Steps, combinando clases grupales, sesiones privadas, prácticas intensivas y seguimiento personalizado. El enfoque va más allá del contenido académico: aquí también se entrenan las habilidades de test-taking, la resistencia mental y la organización del estudio. Nuestro objetivo es que cada alumno cuente con las herramientas necesarias para avanzar con seguridad, mejorar progresivamente sus resultados en los NBME y llegar realmente preparado al examen real, tanto a nivel académico como estratégico y mental.",
+  "USMLE HY TUTOR® es un programa especializado en la preparación para USMLE Step 1, Step 2 CK y Step 3. Nuestra metodología complementa el estudio individual y se enfoca en conceptos High-Yield (HY), reconocimiento de patrones, razonamiento clínico y estrategias de test-taking.",
+  "Nuestras clases son dinámicas e interdisciplinarias, diseñadas para entrenar al estudiante a identificar pistas, conectar conceptos y responder preguntas con mayor seguridad y rapidez. Las sesiones se imparten principalmente en español, integrando terminología médica y conceptos clave en inglés para facilitar la adaptación al lenguaje del examen.",
+  "A través de cada uno de nuestros programas, buscamos que el estudiante desarrolle conocimiento, estrategia, manejo del tiempo y resistencia mental, adquiriendo las herramientas necesarias para enfrentar el examen con mayor seguridad y preparación.",
 ];
 
 export const quienesSomosQuote = "Tu esfuerzo + nuestro método = tu éxito en el USMLE.";
 
-export const programFeatures = [
-  "Clases grupales y privadas disponibles",
-  "Drills, cursos intensivos y entrenamiento de stamina",
-  "Inscripción flexible, sin fecha de inicio o fin fija",
-  "Diseñado para complementar tu estudio individual, no para reemplazarlo",
-];
+export const quienesSomosCeo = {
+  name: "Dr. Kevin Salazar Rikeros",
+  role: "Founder & CEO | USMLE Mentor & Instructor",
+  bio: [
+    "Médico ecuatoriano que llegó a Estados Unidos en 2017 para comenzar su propio camino de preparación para los USMLE. Tras completar y aprobar sus exámenes, y a partir de la experiencia adquirida durante años de preparación, en 2022 fundó USMLE HY TUTOR®, comenzando con un solo estudiante y construyendo, paso a paso, una comunidad que hoy supera los 950 estudiantes acompañados.",
+    "Su metodología nace de su propia experiencia y de una filosofía clara: no se trata únicamente de memorizar contenido, sino de aprender a reconocer patrones, razonar estratégicamente y comprender cómo está construido el examen. Hoy continúa involucrado activamente en la enseñanza y en el desarrollo de los programas de USMLE HY TUTOR®.",
+  ],
+  quote: "La medicina es una carrera de estudio constante para toda la vida.",
+  linkedin: "https://www.linkedin.com/in/kevin-salazar-rikeros-152096244",
+};
 
 export type FaqBlock =
   | { type: "p"; text: string }
@@ -407,7 +409,7 @@ const programasBase = [
     number: "01",
     color: "#1F9D55",
     title: "Clases Grupales Step 1, Step 2 CK & Step 3",
-    tagline: "Clases en vivo 5 días a la semana, con acceso a USMLE Rx, Pathoma y una comunidad internacional.",
+    tagline: "Clases en vivo con enfoque High-Yield para fortalecer conocimientos, asociación, razonamiento y estrategia para el examen.",
     description:
       "Clases en vivo cinco días a la semana en horario de Miami (Eastern Time). El horario oficial se envía todos los domingos para que puedas organizar tu semana con anticipación — por lo general las sesiones son de 7 a 9 PM. Todas quedan grabadas y disponibles en el drive exclusivo aproximadamente 24 horas después.",
     details: [
@@ -431,7 +433,7 @@ const programasBase = [
     number: "02",
     color: "#8A5A2E",
     title: "Clases Grupales Step 2 CK",
-    tagline: "Clases en vivo 3 días a la semana, con enfoque exclusivo en Step 2 CK.",
+    tagline: "Preparación clínica enfocada en Step 2 CK mediante casos, preguntas High-Yield y estrategias orientadas al examen.",
     description:
       "Programa diseñado exclusivamente para la preparación clínica de Step 2 CK. Las clases se dictan tres días por semana, por lo general de 5 a 7 PM (Eastern Time), con acceso adicional a las clases del grupo general para complementar tu preparación con un enfoque interdisciplinario.",
     details: [
@@ -454,7 +456,7 @@ const programasBase = [
     number: "03",
     color: "#E11D74",
     title: "Test Taking Strategies Step 1",
-    tagline: "Grupo privado y exclusivo para Step 1, con cupo limitado a 25 personas.",
+    tagline: "Entrenamiento intensivo para identificar pistas, mejorar el método de descarte, manejar el tiempo y responder con mayor seguridad.",
     description:
       "Entrenamiento intensivo en técnicas de test-taking: aprendes a leer con precisión, identificar pistas, descartar opciones incorrectas y responder de forma rápida y efectiva. Al ser un grupo reducido, cada participante recibe atención prioritaria y un seguimiento más cercano. Las sesiones son en vivo y no quedan grabadas.",
     details: [
@@ -479,7 +481,7 @@ const programasBase = [
     number: "04",
     color: "#7C3AED",
     title: "TTS Step 2 CK Sapphire",
-    tagline: "Grupo privado y exclusivo para Step 2 CK, con cupo limitado a 25 personas.",
+    tagline: "Entrenamiento enfocado en razonamiento clínico, Pattern Recognition y estrategias de test-taking para Step 2 CK.",
     description:
       "Test Taking Strategies Step 2 CK — Sapphire Group. Un grupo privado y exclusivo enfocado en preguntas y casos high-yield, con acompañamiento cercano para desarrollar razonamiento clínico y pattern recognition. Las clases se realizan por lo general los domingos o lunes en la tarde, en vivo y sin grabación.",
     highlight: true,
@@ -505,7 +507,7 @@ const programasBase = [
     number: "05",
     color: "#F0A020",
     title: "Stamina Drills",
-    tagline: "Sesiones grupales de alta intensidad — 8 a 10 horas continuas de entrenamiento.",
+    tagline: "Entrenamiento intensivo de 8 a 10 horas diseñado para fortalecer resistencia mental, concentración y manejo del tiempo bajo presión.",
     description:
       "Sesiones grupales intensivas creadas para simular la exigencia del USMLE en un entorno de alto rendimiento. Durante 8 a 10 horas continuas, los participantes enfrentan preguntas y temas high-yield, con breaks estratégicos de 5 a 10 minutos para recuperar energía sin perder el ritmo ni la concentración.",
     details: [
@@ -529,7 +531,7 @@ const programasBase = [
     number: "06",
     color: "#F0651C",
     title: "Snap Drills",
-    tagline: "Sesiones grupales de drills high-yield — 10 horas mensuales de entrenamiento.",
+    tagline: "Entrenamiento High-Yield enfocado en Active Recall, Pattern Recognition, velocidad, precisión y manejo del tiempo.",
     description:
       "Sesiones grupales de entrenamiento high-yield diseñadas para reforzar los conceptos más importantes y de mayor impacto en el USMLE, con enfoque en active recall y pattern recognition. Grupos reducidos de máximo 50 estudiantes para un ambiente dinámico y participativo.",
     details: [
@@ -552,7 +554,7 @@ const programasBase = [
     number: "07",
     color: "#DC2626",
     title: "Drills Privados",
-    tagline: "Entrenamiento personalizado con Kevin, individual o en grupos de hasta 3 personas.",
+    tagline: "Entrenamiento personalizado con Kevin para identificar errores, perfeccionar estrategias y fortalecer el desempeño antes del examen.",
     description:
       "Sesiones de entrenamiento personalizado con Kevin, de manera individual o en grupos de hasta 3 personas. No son clases tradicionales, sino espacios de práctica intensiva dirigidos a alumnos en una etapa avanzada de preparación, ideales como complemento en la recta final antes del examen.",
     details: [
@@ -574,7 +576,7 @@ const programasBase = [
     number: "08",
     color: "#0E9AA7",
     title: "Meteorito",
-    tagline: "Membresía mensual de acompañamiento continuo — requiere estar inscrito en un programa.",
+    tagline: "Programa de acompañamiento y seguimiento para organizar el estudio, evaluar el progreso y avanzar con mayor estructura y constancia.",
     description:
       "En Meteorito no solo te ayudamos a estudiar: te acompañamos durante todo el proceso con una estrategia clara, mayor organización y un seguimiento constante, para que aproveches mejor tu tiempo de preparación.",
     details: [
@@ -595,24 +597,41 @@ const programasBase = [
       "Resolución de dudas y apoyo constante",
     ],
   },
+  {
+    slug: "consultoria-1-1",
+    number: "09",
+    color: "#2563EB",
+    title: "Consultoría 1-1 con Kevin",
+    tagline: "Sesión privada de 45 minutos para revisar tu preparación, analizar resultados y recibir recomendaciones personalizadas.",
+    description:
+      "Sesión privada de 45 minutos con Kevin para revisar tu preparación, analizar resultados, resolver dudas y recibir recomendaciones personalizadas de acuerdo con tu etapa y objetivos.",
+    note: "No es una clase ni un Drill Privado. Es una sesión de orientación estratégica sobre tu preparación.",
+    details: [
+      { label: "Duración", value: "45 minutos" },
+      { label: "Formato", value: "Llamada privada 1-1 con Kevin" },
+      { label: "Para quién", value: "Estudiantes que buscan orientación personalizada" },
+    ],
+    benefits: [
+      "Revisión y análisis de resultados",
+      "Evaluación de fortalezas y debilidades",
+      "Recomendaciones personalizadas",
+      "Resolución de dudas sobre tu preparación",
+      "Orientación sobre próximos pasos",
+      "Análisis de tu situación actual",
+      "Enfoque estratégico personalizado",
+      "Sesión individual con Kevin",
+    ],
+  },
 ];
 
 export const programas = programasBase.map((p) => ({
   ...p,
-  badge: `/brand/badges/${p.slug}.jpg`,
+  badge: p.slug === "consultoria-1-1" ? undefined : `/brand/badges/${p.slug}.jpg`,
 }));
 
 export const nav = [
   { label: "Quiénes Somos", href: "/quienes-somos" },
-  {
-    label: "Programas",
-    href: "/programas",
-    dropdown: programas.map((p) => ({
-      title: p.title,
-      description: p.tagline,
-      href: `/programas/${p.slug}`,
-    })),
-  },
+  { label: "Programas", href: "/programas" },
   { label: "Reseñas", href: "/resenas" },
   { label: "Videos", href: "/reacciones" },
   { label: "Galeria", href: "/galeria" },

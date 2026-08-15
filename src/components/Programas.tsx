@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 import { programas } from "@/lib/data";
 
@@ -9,15 +8,15 @@ export function Programas() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
-            Nuestros programas · Cupos limitados
+            Nuestros programas
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Un programa para cada etapa de tu camino.
+            Una preparación para cada etapa de tu camino
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
-            Trabajamos por aplicación: no aceptamos a todos, porque cada lugar
-            importa y cada acompañamiento debe ser real. Elige un programa
-            para ver el detalle completo: pasos, formato y video.
+            Cada estudiante tiene necesidades y objetivos diferentes. Explora nuestros
+            programas y encuentra la modalidad de preparación que mejor se adapte a tu
+            etapa, tu ritmo y tus objetivos para los USMLE Steps.
           </p>
         </Reveal>
 
@@ -33,14 +32,7 @@ export function Programas() {
                     Premium
                   </span>
                 )}
-                <Image
-                  src={p.badge}
-                  alt=""
-                  width={112}
-                  height={112}
-                  className="h-14 w-14 rounded-full transition-transform duration-300 group-hover:scale-110"
-                />
-                <h3 className="font-display mt-5 text-lg font-bold leading-snug text-ink">
+                <h3 className="font-display text-lg font-bold leading-snug text-ink">
                   {p.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">

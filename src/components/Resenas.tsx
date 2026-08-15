@@ -22,11 +22,11 @@ export function Resenas({ reviews }: { reviews: ResenaItem[] }) {
             Reseñas
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            No solo lo dicen ellos. Lo viven.
+            Historias reales. Resultados reales
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
-            Historias reales de personas que encontraron estructura donde
-            antes había ruido.
+            Conoce la experiencia de estudiantes que confiaron en USMLE HY TUTOR para
+            acompañarnos durante su preparación para los USMLE Steps.
           </p>
         </Reveal>
 

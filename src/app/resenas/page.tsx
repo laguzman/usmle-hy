@@ -30,10 +30,10 @@ export default async function ResenasPage() {
               Comparte tu experiencia
             </p>
             <h2 className="font-display mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Deja tu reseña.
+              Tu experiencia también puede inspirar a otros
             </h2>
             <p className="mt-4 text-brand-100">
-              ¿Ya tomaste uno de nuestros programas? Nos encantaría conocer tu experiencia.
+              Si has tomado parte de USMLE HY TUTOR, nos encantaría conocer tu experiencia.
             </p>
           </Reveal>
 
