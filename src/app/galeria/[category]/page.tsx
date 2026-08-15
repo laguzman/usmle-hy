@@ -76,7 +76,19 @@ export default async function GaleriaCategoriaPage({
           </p>
         </Reveal>
 
-        {images.length > 0 ? (
+        {images.length === 1 ? (
+          <Reveal delay={0.05} className="mt-12">
+            <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl bg-brand-50">
+              <Image
+                src={images[0]}
+                alt={section.title}
+                width={1200}
+                height={1200}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </Reveal>
+        ) : images.length > 0 ? (
           <RevealGroup className="mt-12 columns-2 gap-4 sm:columns-3" stagger={0.02}>
             {images.map((src) => (
               <RevealItem key={src} className="mb-4 break-inside-avoid">
