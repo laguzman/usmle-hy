@@ -47,19 +47,28 @@ export default async function ProgramaPage({
             Todos los programas
           </Link>
 
-          <Image
-            src={programa.badge}
-            alt=""
-            width={224}
-            height={224}
-            className="mt-8 h-24 w-24 rounded-full"
-          />
+          {programa.badge && (
+            <Image
+              src={programa.badge}
+              alt=""
+              width={224}
+              height={224}
+              className="mt-8 h-24 w-24 rounded-full"
+            />
+          )}
           <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             {programa.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-brand-100">
             {programa.description}
           </p>
+
+          {programa.note && (
+            <p className="mt-4 max-w-2xl rounded-2xl border border-brand-300/30 bg-brand-800 px-5 py-4 text-sm leading-relaxed text-brand-100">
+              <span className="font-semibold text-brand-300">Importante: </span>
+              {programa.note}
+            </p>
+          )}
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link

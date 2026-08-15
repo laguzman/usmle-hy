@@ -8,12 +8,11 @@ export function CtaBand() {
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <Reveal>
           <h2 className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            ¿Listo para dar el siguiente paso?
+            Tu preparación. Tu ritmo. Nuestro método.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-brand-50">
-            El acceso es limitado y por aplicación. Trabajamos con un número
-            reducido de personas por generación para garantizar un
-            acompañamiento real.
+            Cada estudiante vive un proceso diferente. Conoce nuestro programa y encuentra la
+            preparación que mejor se adapte a tu etapa, tus objetivos y tu camino hacia los USMLE Steps.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Link

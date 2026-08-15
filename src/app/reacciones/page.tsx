@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Reacciones } from "@/components/Reacciones";
+import { getChannelVideos } from "@/lib/youtube";
 
 export const metadata: Metadata = {
-  title: "Reacciones — USMLE HY Tutor",
+  title: "Videos — USMLE HY Tutor",
   description: "Testimonios en video, directo de quienes ya lo lograron.",
 };
 
-export default function ReaccionesPage() {
-  return <Reacciones />;
+export default async function ReaccionesPage() {
+  const videos = await getChannelVideos();
+  return <Reacciones videos={videos} />;
 }

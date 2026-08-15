@@ -1,25 +1,6 @@
+import Link from "next/link";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
-
-const tiles = [
-  "aspect-square",
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[4/5]",
-  "aspect-square",
-];
-
-function CameraIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className={className}>
-      <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
-      <circle cx="12" cy="13.5" r="3.5" />
-    </svg>
-  );
-}
+import { gallerySections } from "@/lib/data";
 
 export function Galeria() {
   return (
@@ -37,15 +18,24 @@ export function Galeria() {
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-16 columns-2 gap-4 sm:columns-3">
-          {tiles.map((aspect, i) => (
-            <RevealItem key={i} className="mb-4 break-inside-avoid">
-              <div
-                className={`group relative flex ${aspect} w-full items-center justify-center overflow-hidden rounded-2xl bg-brand-50 transition-transform duration-300 hover:-translate-y-1`}
+        <RevealGroup className="mt-16 grid gap-6 sm:grid-cols-2">
+          {gallerySections.map((section) => (
+            <RevealItem key={section.key}>
+              <Link
+                href={`/galeria/${section.key}`}
+                className="group flex h-full flex-col rounded-3xl border border-ink/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5"
               >
-                <div className="bg-grid absolute inset-0 opacity-40" />
-                <CameraIcon className="relative h-8 w-8 text-brand-300 transition-colors group-hover:text-brand-400" />
-              </div>
+                <h3 className="font-display text-xl font-bold text-ink">{section.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
+                  {section.description}
+                </p>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition-all group-hover:gap-2.5">
+                  {section.cta}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </Link>
             </RevealItem>
           ))}
         </RevealGroup>
