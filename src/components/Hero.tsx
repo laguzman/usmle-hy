@@ -42,7 +42,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 max-w-xl text-lg leading-relaxed text-brand-100"
+          className="mt-12 max-w-xl text-lg leading-relaxed text-brand-100"
         >
           USMLE Step 1 • Step 2CK • Step 3
           High-Yield Prep | Test-Taking Strategies
@@ -67,7 +67,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.45 }}
-          className="mt-20 grid max-w-2xl grid-cols-3 gap-8 border-t border-white/15 pt-10"
+          className="mt-20 flex max-w-md flex-col gap-8 border-t border-white/15 pt-10"
         >
           {stats.map((s) => (
             <div key={s.label}>

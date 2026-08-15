@@ -58,7 +58,7 @@ export const countries = [
 
 export const stats = [
   { value: 950, suffix: "+", label: "Estudiantes acompañados", label_d: "Una comunidad que continúa creciendo"},
-  { value: 2021, suffix: "", label: "Preparando para los USMLE Steps", label_d: "Acompañamiento, estrategia y entrenamiento constante" },
+  { value: 2022, suffix: "", label: "Preparando para los USMLE Steps", label_d: "Acompañamiento, estrategia y entrenamiento constante" },
   { value: 90.6, suffix: "%", label: "Passing Rate", label_d: "Resultados reportados por nuestros estudiantes" },
 ];
 
@@ -495,7 +495,7 @@ const programasBase = [
     description:
       "Grupo privado enfocado en desarrollar estrategias de test-taking para Step 1. A través de práctica intensiva, el estudiante aprende a identificar pistas, descartar opciones incorrectas, manejar mejor el tiempo y responder con mayor seguridad y precisión.",
     details: [
-      { label: "Entrenamiento", value: "12 horas al mes dividida en 3 o 4 sesiones" },
+      { label: "Entrenamiento", value: "12 horas al mes divididas en 3 o 4 sesiones" },
       { label: "Formato", value: "Sesiones en vivo · No quedan grabadas" },
       { label: "Para quién", value: "Estudiantes de Step 1 · Cupos limitados" },
     ],
@@ -521,7 +521,7 @@ const programasBase = [
       "Grupo privado enfocado en fortalecer el razonamiento clínico y las estrategias de test-taking para Step 2 CK. El entrenamiento trabaja preguntas y casos High-Yield para aprender a identificar información clave, reconocer patrones y seleccionar respuestas de manera más rápida y estratégica.",
     highlight: true,
     details: [
-      { label: "Entrenamiento", value: "12 horas al mes dividida en 3 o 4 sesiones" },
+      { label: "Entrenamiento", value: "12 horas al mes divididas en 3 o 4 sesiones" },
       { label: "Formato", value: "Sesiones en vivo · No quedan grabadas" },
       { label: "Para quién", value: "Estudiantes de Step 2 CK · Cupo limitado" },
     ],
@@ -672,7 +672,7 @@ export const nav = [
   { label: "Programas", href: "/programas" },
   { label: "Reseñas", href: "/resenas" },
   { label: "Videos", href: "/reacciones" },
-  { label: "Galeria", href: "/galeria" },
+  { label: "Galería", href: "/galeria" },
   { label: "FAQ", href: "/faq" },
 ] as const;
 
