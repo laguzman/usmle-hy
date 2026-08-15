@@ -24,9 +24,9 @@ export const countries = [
 ];
 
 export const stats = [
-  { value: 700, suffix: "+", label: "Estudiantes acompañados" },
-  { value: 2021, suffix: "", label: "Desde" },
-  { value: 90.6, suffix: "%", label: "Tasa de aprobación" },
+  { value: 950, suffix: "+", label: "Estudiantes acompañados", label_d: "Una comunidad que continúa creciendo"},
+  { value: 2021, suffix: "", label: "Preparando para los USMLE Steps", label_d: "Acompañamiento, estrategia y entrenamiento constante" },
+  { value: 90.6, suffix: "%", label: "Passing Rate", label_d: "Resultados reportados por nuestros estudiantes" },
 ];
 
 export const quienesSomosText = [

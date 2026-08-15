@@ -21,6 +21,18 @@ const links = [
       "Historias reales de personas que encontraron estructura donde antes había ruido.",
   },
   {
+    href: "/reacciones",
+    title: "Videos",
+    description:
+      "Reacciones reales de estudiantes al enterarse de su score, directo de nuestro canal.",
+  },
+  {
+    href: "/galeria",
+    title: "Galeria",
+    description:
+      "Momentos de la comunidad: clases en vivo, simulacros y celebraciones.",
+  },
+  {
     href: "/faq",
     title: "FAQ",
     description:

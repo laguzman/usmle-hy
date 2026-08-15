@@ -12,24 +12,31 @@ export function Hero() {
       <div className="absolute left-1/2 top-[-10%] h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-brand-300/30 blur-[120px]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300"
-        >
-          High-Yield Prep
-        </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display mt-6 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl"
+          className="font-display mt-6 max-w-3xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-6xl"
         >
           Tu camino a ser MD en EE. UU.{" "}
           <span className="italic text-brand-300">empieza aquí.</span>
         </motion.h1>
+
+        <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            className="mt-12 max-w-3xl overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/30"
+        >
+          <video
+              src="/videos/hero.mp4"
+              // poster="/videos/hero-poster.jpg"
+              controls
+              playsInline
+              className="w-full"
+          />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 18 }}
@@ -37,9 +44,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 max-w-xl text-lg leading-relaxed text-brand-100"
         >
-          Clases grupales, estrategia de examen y drills de alto rendimiento
-          para Step 1, Step 2 CK y Step 3 — con acompañamiento real, en
-          español.
+          USMLE Step 1 • Step 2CK • Step 3
+          High-Yield Prep | Test-Taking Strategies
+          Live lectures • Stamina • Drills
         </motion.p>
 
         <motion.div
@@ -54,12 +61,6 @@ export function Hero() {
           >
             Contáctanos
           </Link>
-          <Link
-            href="/quienes-somos"
-            className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:text-brand-300"
-          >
-            Conoce el método
-          </Link>
         </motion.div>
 
         <motion.div
@@ -73,7 +74,8 @@ export function Hero() {
               <p className="font-display text-3xl font-extrabold text-white sm:text-4xl">
                 <Counter value={s.value} suffix={s.suffix} />
               </p>
-              <p className="mt-1 text-sm text-brand-100">{s.label}</p>
+              <p className="mt-1 text-sm text-brand-100 font-bold">{s.label}</p>
+              <p className="mt-1 text-sm text-brand-100">{s.label_d}</p>
             </div>
           ))}
         </motion.div>
