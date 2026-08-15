@@ -1,10 +1,11 @@
 export type ProgramIconKey =
   | "group"
+  | "stethoscope"
   | "checklist"
   | "diamond"
   | "run"
   | "bolt"
-  | "lock"
+  | "target"
   | "meteor"
   | "chat";
 
@@ -15,6 +16,14 @@ const paths: Record<ProgramIconKey, React.ReactNode> = {
       <path d="M2 20c0-3 3-5 7-5s7 2 7 5" />
       <circle cx="17" cy="9" r="2.5" />
       <path d="M17.5 12c2.5.3 4.5 2 4.5 5" />
+    </>
+  ),
+  stethoscope: (
+    <>
+      <path d="M7 3v4a4 4 0 0 0 8 0V3" />
+      <path d="M11 11v4" />
+      <circle cx="11" cy="18" r="3" />
+      <circle cx="17.5" cy="14.5" r="1.5" />
     </>
   ),
   checklist: (
@@ -31,10 +40,12 @@ const paths: Record<ProgramIconKey, React.ReactNode> = {
     </>
   ),
   bolt: <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" />,
-  lock: (
+  target: (
     <>
-      <rect x="4" y="11" width="16" height="10" rx="2" />
-      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none" />
+      <path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3" />
     </>
   ),
   meteor: (
@@ -45,8 +56,8 @@ const paths: Record<ProgramIconKey, React.ReactNode> = {
   ),
   chat: (
     <>
-      <path d="M4 5h16v11H9l-4 4v-4H4z" />
-      <path d="M8 9h8M8 12.5h5" />
+      <path d="M3 4h12v9H9l-3.5 3.5V13H3z" />
+      <path d="M13 9h8v7h-3l-2.5 2.5V16h-2.5z" />
     </>
   ),
 };

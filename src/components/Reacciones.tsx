@@ -16,11 +16,11 @@ export function Reacciones({ videos }: { videos: YoutubeVideo[] }) {
             Videos
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Historias reales. En sus propias palabras
+            El momento que lo cambia todo.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
-            Conoce las experiencias, resultados y reacciones de estudiantes de USMLE HY TUTOR
-            durante su camino por los USMLE Steps.
+            Conoce las experiencias, resultados y reacciones reales de estudiantes de
+            USMLE HY TUTOR®️ durante su camino por los USMLE Steps.
           </p>
         </Reveal>
 

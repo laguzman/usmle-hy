@@ -11,10 +11,11 @@ export function Galeria() {
             Galería
           </p>
           <h2 className="font-display mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            Momentos de la comunidad.
+            Momentos que forman parte de nuestra historia.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-brand-100">
-            Clases en vivo, simulacros y celebraciones de quienes ya lo lograron.
+            Conoce más de USMLE HY TUTOR® a través de nuestros eventos, feedbacks,
+            resultados y el equipo que acompaña a nuestra comunidad.
           </p>
         </Reveal>
 
