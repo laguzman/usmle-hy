@@ -20,7 +20,7 @@ export function Programas() {
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {programas.map((p) => (
             <RevealItem key={p.slug}>
               <Link

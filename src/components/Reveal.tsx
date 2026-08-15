@@ -3,15 +3,6 @@
 import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 
-const container: Variants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
 const item: Variants = {
   hidden: { opacity: 0, y: 28 },
   show: {
@@ -24,10 +15,21 @@ const item: Variants = {
 export function RevealGroup({
   children,
   className,
+  stagger = 0.12,
 }: {
   children: ReactNode;
   className?: string;
+  stagger?: number;
 }) {
+  const container: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: stagger,
+      },
+    },
+  };
+
   return (
     <motion.div
       className={className}
