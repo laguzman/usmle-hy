@@ -17,7 +17,7 @@ export function TeamGrid({ members }: { members: TeamMember[] }) {
           <RevealItem key={member.name}>
             <div className="overflow-hidden rounded-3xl bg-brand-50">
               <div className="relative aspect-square w-full">
-                <Image src={member.photo} alt={member.name} fill className="object-cover" />
+                <Image src={member.photo} alt={member.name} fill className="object-cover object-top" />
               </div>
             </div>
 
