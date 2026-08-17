@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     programa,
     mensaje,
     calificacion,
-    approved: true,
+    approved: false,
     createdAt: new Date(),
   });
 
