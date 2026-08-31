@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { programas } from "@/lib/data";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
@@ -49,20 +50,6 @@ export default async function ProgramaPage({
           <h1 className="font-display mt-5 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             {programa.title}
           </h1>
-
-          {programa.videoId && (
-            <div className="mt-8 max-w-2xl overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/30">
-              <div className="relative aspect-video">
-                <iframe
-                  src={`https://www.youtube.com/embed/${programa.videoId}`}
-                  title={programa.title}
-                  className="absolute inset-0 h-full w-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          )}
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-brand-100">
             {programa.description}
           </p>
