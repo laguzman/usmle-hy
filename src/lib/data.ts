@@ -518,12 +518,27 @@ export const faq: FaqItem[] = [
   },
 ];
 
-const programasBase = [
+type ProgramaBase = {
+  slug: string;
+  number: string;
+  color: string;
+  title: string;
+  tagline: string;
+  description: string;
+  details: { label: string; value: string }[];
+  note?: string;
+  highlight?: boolean;
+  videoId?: string;
+  benefits: string[];
+};
+
+const programasBase: ProgramaBase[] = [
   {
     slug: "clases-grupales-step1-ck-step3",
     number: "01",
     color: "#1F9D55",
     title: "Clases Grupales Step 1, Step 2 CK & Step 3",
+    videoId: "TdYOVNO-WP4",
     tagline: "Clases en vivo con enfoque High-Yield para fortalecer conocimientos, asociación, razonamiento y estrategia para el examen.",
     description:
       "Clases en vivo cinco días a la semana, en horario de Miami (Eastern Time). El horario semanal se comunica con anticipación y, por lo general, las sesiones se realizan de 7 a 9 PM. Todas las clases quedan grabadas y disponibles en el Drive exclusivo aproximadamente 24 horas después.",
@@ -549,6 +564,7 @@ const programasBase = [
     number: "02",
     color: "#8A5A2E",
     title: "Clases Grupales Step 2 CK",
+    videoId: "6H8rIvAD9LI",
     tagline: "Preparación clínica enfocada en Step 2 CK mediante casos, preguntas High-Yield y estrategias orientadas al examen.",
     description:
       "Clases en vivo tres días a la semana, enfocadas exclusivamente en la preparación clínica para Step 2 CK. Por lo general, las sesiones se realizan de 5 a 7 PM (Eastern Time). Todas las clases quedan grabadas y disponibles en el Drive exclusivo aproximadamente 24 horas después.",
@@ -624,6 +640,7 @@ const programasBase = [
     number: "05",
     color: "#F0A020",
     title: "Stamina Drills",
+    videoId: "AyBWIrlKTE0",
     tagline: "Entrenamiento intensivo de 8 a 10 horas diseñado para fortalecer resistencia mental, concentración y manejo del tiempo bajo presión.",
     description:
       "Sesiones grupales de alta intensidad diseñadas para simular la exigencia del USMLE. Durante 8 a 10 horas de entrenamiento, se trabajan preguntas, casos y temas High-Yield para fortalecer la resistencia mental, la concentración y el manejo del tiempo.",
@@ -649,6 +666,7 @@ const programasBase = [
     number: "06",
     color: "#F0651C",
     title: "Snap Drills",
+    videoId: "VQMjPqtFDFM",
     tagline: "Entrenamiento High-Yield enfocado en Active Recall, Pattern Recognition, velocidad, precisión y manejo del tiempo.",
     description:
       "Sesiones grupales de entrenamiento High-Yield diseñadas para reforzar conceptos clave y desarrollar mayor rapidez, precisión y seguridad al responder preguntas. El entrenamiento se enfoca en Active Recall, Pattern Recognition y manejo del tiempo.",
@@ -674,6 +692,7 @@ const programasBase = [
     number: "07",
     color: "#DC2626",
     title: "Drills Privados",
+    videoId: "md2soMWzn0c",
     tagline: "Entrenamiento personalizado con Kevin para identificar errores, perfeccionar estrategias y fortalecer el desempeño antes del examen.",
     description:
       "Sesiones de entrenamiento personalizado con Kevin, de manera individual o en grupos de hasta 3 personas. El estudiante trabaja directamente con preguntas High-Yield y recibe retroalimentación inmediata sobre su razonamiento, estrategia y selección de respuestas.",
@@ -699,6 +718,7 @@ const programasBase = [
     color: "#0E9AA7",
     title: "Meteorito",
     tagline: "Programa de acompañamiento y seguimiento para organizar el estudio, evaluar el progreso y avanzar con mayor estructura y constancia.",
+    videoId: "iIhy39JKRlE",
     description:
       "Programa de acompañamiento diseñado para ayudarte a avanzar con mayor estructura, organización y seguimiento durante tu preparación. Incluye follow-ups, planificación del estudio, análisis de resultados y apoyo continuo durante el mes.",
     details: [
@@ -722,6 +742,7 @@ const programasBase = [
     number: "09",
     color: "#2563EB",
     title: "Consultoría 1-1 con Kevin",
+    videoId: "CjrGVSCdkYs",
     tagline: "Sesión privada de 45 minutos para revisar tu preparación, analizar resultados y recibir recomendaciones personalizadas.",
     description:
       "Sesión privada de 45 minutos con Kevin para revisar tu preparación, analizar resultados, resolver dudas y recibir recomendaciones personalizadas de acuerdo con tu etapa y objetivos.",
