@@ -21,9 +21,7 @@ export default async function ResenasPage() {
 
   return (
     <>
-      <Resenas reviews={reviewsApproved} />
-
-      <section className="relative pb-28">
+      <section className="relative pt-40 pb-20">
         <div className="mx-auto max-w-2xl px-6">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
@@ -42,6 +40,8 @@ export default async function ResenasPage() {
           </Reveal>
         </div>
       </section>
+
+      <Resenas reviews={reviewsApproved} />
     </>
   );
 }

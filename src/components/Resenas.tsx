@@ -15,7 +15,7 @@ function Stars({ count }: { count: number }) {
 
 export function Resenas({ reviews }: { reviews: ResenaItem[] }) {
   return (
-    <section className="relative pt-40 pb-28">
+    <section className="relative pb-28">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
