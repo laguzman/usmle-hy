@@ -102,28 +102,14 @@ function ResenaCard({ resena }: { resena: AdminResenaItem }) {
 }
 
 export function AdminResenas({ resenas }: { resenas: AdminResenaItem[] }) {
-  const router = useRouter();
   const pending = resenas.filter((r) => !r.approved);
   const approved = resenas.filter((r) => r.approved);
 
-  async function logout() {
-    await fetch("/api/admin/logout", { method: "POST" });
-    router.refresh();
-  }
-
   return (
     <div className="mx-auto max-w-4xl px-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">Admin</p>
-          <h1 className="font-display mt-2 text-3xl font-extrabold text-white">Reseñas</h1>
-        </div>
-        <button
-          onClick={logout}
-          className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold text-white transition-colors hover:border-brand-300"
-        >
-          Cerrar sesión
-        </button>
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">Admin</p>
+        <h1 className="font-display mt-2 text-3xl font-extrabold text-white">Reseñas</h1>
       </div>
 
       <div className="mt-10">

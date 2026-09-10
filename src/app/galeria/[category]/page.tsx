@@ -3,9 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { gallerySections, teamMembers } from "@/lib/data";
-import { getGalleryImages } from "@/lib/gallery";
+import { listGalleryImages } from "@/lib/galleryStorage";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { TeamGrid } from "@/components/TeamGrid";
+
+export const revalidate = 300;
 
 export function generateStaticParams() {
   return gallerySections.map((s) => ({ category: s.key }));
@@ -53,7 +55,7 @@ export default async function GaleriaCategoriaPage({
 
   if (!section) notFound();
 
-  const images = getGalleryImages(category);
+  const images = category === "equipo" ? [] : await listGalleryImages(category);
 
   return (
     <section className="relative pt-40 pb-28">
@@ -87,7 +89,7 @@ export default async function GaleriaCategoriaPage({
           <Reveal delay={0.05} className="mt-12">
             <div className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl bg-brand-50">
               <Image
-                src={images[0]}
+                src={images[0].url}
                 alt={section.title}
                 width={1200}
                 height={1200}
@@ -97,11 +99,11 @@ export default async function GaleriaCategoriaPage({
           </Reveal>
         ) : images.length > 0 ? (
           <RevealGroup className="mt-12 columns-2 gap-4 sm:columns-3" stagger={0.02}>
-            {images.map((src) => (
-              <RevealItem key={src} className="mb-4 break-inside-avoid">
+            {images.map((img) => (
+              <RevealItem key={img.name} className="mb-4 break-inside-avoid">
                 <div className="relative w-full overflow-hidden rounded-2xl bg-brand-50 transition-transform duration-300 hover:-translate-y-1">
                   <Image
-                    src={src}
+                    src={img.url}
                     alt={section.title}
                     width={600}
                     height={600}
